@@ -1,0 +1,63 @@
+# Porpoise Agent 主配置
+
+agent:
+  name: "Porpoise Agent"
+  version: "0.1.0"
+  lab: "FFRC-LiuKai-Lab"
+  description: "江豚研究智能体"
+
+orchestrator:
+  max_steps: 100
+  max_tool_calls_per_step: 5
+  timeout_seconds: 300
+  human_in_loop: true
+  approval_required_for:
+    - field_survey_plan
+    - conservation_recommendation
+    - data_deletion
+    - external_api_write
+
+agents:
+  literature:
+    enabled: true
+    model: "deepseek-chat"
+    max_papers_per_search: 20
+    sources:
+      - arxiv
+      - pubmed
+      - semantic_scholar
+      - google_scholar
+  acoustic:
+    enabled: true
+    model: "deepseek-chat"
+    supported_formats: [".wav", ".flac", ".aiff"]
+    default_sampling_rate: 576000
+    nbhf_band: [100000, 180000]
+  ecology:
+    enabled: true
+    model: "deepseek-reasoner"
+  conservation:
+    enabled: true
+    model: "deepseek-reasoner"
+  genetics:
+    enabled: false
+    model: "deepseek-reasoner"
+  field:
+    enabled: true
+    model: "deepseek-chat"
+
+skills:
+  auto_discover: true
+  skill_dir: "src/skills"
+  default_mode: "inline"
+
+memory:
+  type: "chromadb",
+  persist_dir: "./data/chroma_db",
+  collection_prefix: "porpoise",
+  max_context_tokens: 8000
+
+knowledge_graph:
+  enabled: false,
+  backend: "neo4j",
+  uri: "bolt://localhost:7687"

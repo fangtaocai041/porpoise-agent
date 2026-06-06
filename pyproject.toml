@@ -9,6 +9,7 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "cognitive-search-engine",          # 本地路径: D:/Reasonix/cognitive-search-engine
     "reasonix>=0.30.0",
     "openai>=1.0.0",           # DeepSeek API 兼容
     "numpy>=1.26",
@@ -62,4 +63,16 @@ target-version = "py311"
 
 [tool.mypy]
 python_version = "3.11"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = ["-v", "--tb=short", "--strict-markers"]
+markers = [
+    "slow: slow tests (deselect with '-m \"not slow\"')",
+    "unit: unit tests",
+    "integration: integration tests",
+    "network: tests requiring network access",
+]
 strict = true

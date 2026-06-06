@@ -32,7 +32,42 @@ class Config:
 
     @property
     def orchestrator(self) -> dict:
-        return self._agent_config.get("orchestrator", {})
+        """兼容旧接口 — 已迁移到 cognitive.react_loop"""
+        return self._agent_config.get("cognitive", {}).get("react_loop", {})
+
+    # ── 五层模型属性 ──────────────────────────────────
+
+    @property
+    def interaction(self) -> dict:
+        return self._agent_config.get("interaction", {})
+
+    @property
+    def cognitive(self) -> dict:
+        return self._agent_config.get("cognitive", {})
+
+    @property
+    def memory_config(self) -> dict:
+        return self._agent_config.get("memory", {})
+
+    @property
+    def mapping(self) -> dict:
+        return self._agent_config.get("mapping", {})
+
+    @property
+    def execution(self) -> dict:
+        return self._agent_config.get("execution", {})
+
+    @property
+    def topology(self) -> dict:
+        return self._agent_config.get("topology", {})
+
+    @property
+    def integration(self) -> dict:
+        return self._agent_config.get("integration", {})
+
+    @property
+    def cognitive_search(self) -> dict:
+        return self._agent_config.get("integration", {}).get("cognitive_search", {})
 
     @property
     def agents(self) -> dict:

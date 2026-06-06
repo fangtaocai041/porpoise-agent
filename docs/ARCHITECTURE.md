@@ -1,79 +1,178 @@
-# 🏗️ Porpoise Agent 架构设计
+# 🏗️ Porpoise Agent 架构设计 v2.0
 
-> 每一层抽象都由江豚研究的具体需求和 DeepSeek 的特性驱动。
+> 基于**五层标准智能体分层架构模型 (Standard Agent Architectural Model)**
+>
+> 每一层抽象都由江豚研究的具体需求、DeepSeek 特性、以及形式化理论驱动。
 
-## 1. 设计哲学
+## 设计哲学
 
-### 三条铁律
+### 四条铁律
 
 | # | 原则 | 说明 |
 |---|------|------|
-| I | DeepSeek 原生 | 深度利用 prefix-cache、R1 推理链、廉价 token |
-| II | 领域可解释 | 每一步推理留有可审计的痕迹 |
-| III | 人机协作 | Agent 是副驾驶，关键决策保留人工审批 |
+| I | **五层闭环** | 交互→认知→记忆→映射→执行 形成控制论反馈系统 |
+| II | **BDI 形式化** | Belief/Desire/Intention 状态机驱动决策 |
+| III | **DeepSeek 原生** | 深度利用 prefix-cache、R1 推理链 |
+| IV | **人机协作** | Agent 是副驾驶，关键决策保留人工审批 |
 
-### 对标项目借鉴
+### 理论基础
 
-| 借鉴来源 | 借鉴内容 | 适配方式 |
-|-----------|----------|----------|
-| Reasonix (esengine) | Cache-First Loop, R1 Harvesting | 直接复用核心 Loop |
-| Ecology-Harness (ECNU) | Skill Hub, MCP 编排 | 适配为江豚 Skill Pack |
-| AgentLaboratory | 三阶段流水线 | 扩展为五阶段 |
-| ecological-agent-skills | SKILL.md 格式 | 豚类专用 Skills |
-| CetusID / which.dolphin | CNN 声学分类 | 集成 NBHF click 检测 |
-| SciToolAgent (ZJU) | 工具知识图谱 | 江豚研究工具 KG |
+本架构融合以下理论框架:
 
-## 2. 总体架构
+| 理论 | 对应组件 | 说明 |
+|------|----------|------|
+| **BDI Model** | `cognitive/bdi.py` | Belief-Desire-Intention 心智模型 |
+| **MDP / POMDP** | `cognitive/react_loop.py` | 离散时间决策过程形式化 |
+| **ReAct** | `cognitive/react_loop.py` | Think→Act→Observe→Reflect 闭环 |
+| **Tree/Graph of Thoughts** | `cognitive/decomposer.py`, `cognitive/search.py` | 树/图搜索推理路径 |
+| **Reflexion** | `cognitive/reflexion.py` | Critic 自我反思 + 信用分配 |
+| **Multi-Agent Topology** | `agents/topology.py` | 图论驱动的 MAS 通信架构 |
+| **RAG** | `memory/long_term.py` | 向量检索增强生成 |
 
-三层架构：用户界面层 → Orchestrator (CacheFirstLoop + ToolCallRepair) → 专业Agent层/Skill Hub层/工具知识层
+## 2. 总体架构: 五层闭环反馈系统
 
-## 3. 五阶段研究流水线
+```
+┌─────────────────────────────────────────────────┐
+│              用户界面 (CLI / API)                 │
+└─────────────────────┬───────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────┐
+│  Layer 1: 交互与感知层 (src/interaction/)        │
+│  ┌─────────────┐  ┌──────────────────────────┐  │
+│  │ NLU 解析器  │  │  响应渲染器               │  │
+│  │ (意图/实体) │  │  (Markdown/JSON/Table)   │  │
+│  └─────────────┘  └──────────────────────────┘  │
+└─────────────────────┬───────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────┐
+│  Layer 2: 认知与决策层 (src/cognitive/)          │
+│  ┌──────────┐ ┌──────────┐ ┌────────────────┐  │
+│  │ BDI 状态 │ │ ReAct    │ │ 任务分解器     │  │
+│  │ 机       │ │ 主循环   │ │ (CoT/ToT/GoT)  │  │
+│  └──────────┘ └──────────┘ └────────────────┘  │
+│  ┌──────────┐ ┌──────────┐                     │
+│  │Reflexion │ │ 思维搜索 │                     │
+│  │ Critic   │ │(BFS/Beam)│                     │
+│  └──────────┘ └──────────┘                     │
+└──────────┬──────────────────┬───────────────────┘
+           │                  │
+┌──────────▼──────┐  ┌───────▼────────────────────┐
+│ Layer 3: 记忆层 │  │ Layer 4: 映射与转换层       │
+│ (src/memory/)   │  │ (src/mapping/)             │
+│ ┌────────────┐  │  │ ┌──────────┐ ┌──────────┐ │
+│ │ 短期记忆   │  │  │ │ 意图路由 │ │ 序列化器 │ │
+│ │ (STM)      │  │  │ │          │ │NL→Code   │ │
+│ └────────────┘  │  │ └──────────┘ └──────────┘ │
+│ ┌────────────┐  │  │ ┌──────────┐              │
+│ │ 长期记忆   │  │  │ │ 输出校验 │              │
+│ │ (ChromaDB) │  │  │ │          │              │
+│ └────────────┘  │  │ └──────────┘              │
+└──────────┬──────┘  └───────┬────────────────────┘
+           │                  │
+┌──────────▼──────────────────▼───────────────────┐
+│  Layer 5: 工具与执行层 (src/execution/)          │
+│  ┌──────────┐ ┌──────────┐ ┌────────────────┐  │
+│  │ 沙盒执行 │ │ 工具注册 │ │ API 客户端     │  │
+│  │ 器       │ │ 中心     │ │ (PubMed等)     │  │
+│  └──────────┘ └──────────┘ └────────────────┘  │
+└─────────────────────────────────────────────────┘
+```
 
-Phase 1 文献调研 → Phase 2 数据分析 → Phase 3 野外调查 → Phase 4 保护评估 → Phase 5 成果产出
+## 3. 数据流: ReAct 闭环
 
-| 阶段 | AI 自主 | 需人工确认 |
-|------|---------|-------------|
-| 文献调研 | 搜索、摘要、分类 | 纳入标准、方向校准 |
-| 数据分析 | 信号处理、特征提取 | 模型选择、异常值 |
-| 野外调查 | 路线生成、配置建议 | 方案审批、安全决策 |
-| 保护评估 | 指标计算、情景模拟 | 管理建议审核 |
-| 成果产出 | 草稿生成、排版 | 内容审核、学术判断 |
+对应经典的控制论反馈系统 (Cybernetic Feedback System):
 
-## 4. Reasonix 适配
+```
+用户输入
+  │
+  ▼
+[Layer 1: 感知]
+  NLU 解析 → Intent + Entities
+  │
+  ▼
+[Layer 3: 记忆]
+  STM 上下文 + LTM RAG 召回
+  │
+  ▼
+[Layer 2: 认知 — Think]
+  BDI 更新 → CoT 分解 → 生成计划
+  │
+  ▼
+[Layer 4: 映射]
+  意图路由 → NL→代码序列化 → 校验
+  │
+  ▼
+[Layer 5: 执行 — Act]
+  工具调用 / 沙盒执行
+  │
+  ▼
+[Layer 5: 观察 — Observe]
+  捕获 stdout / stderr / API 响应
+  │
+  ▼
+[Layer 2: 反思 — Reflect]
+  Critic 评估 → 信用分配 →
+  ├─ 成功 → 输出结果 → [Layer 1: 渲染]
+  └─ 失败 → 生成反馈 → [Layer 2: Think] (重新循环)
+```
 
-CacheFirstLoop + ImmutablePrefix → 最大化 DeepSeek prefix-cache 命中率 (70-95%)
-R1 Thought Harvesting → 结构化推理追踪 (subgoals/hypotheses/uncertainties)
-ToolCallRepair → 自动修复 DeepSeek 的 JSON 格式问题
+## 4. BDI 形式化
 
-## 5. 数据流
+| BDI 组件 | 项目实现 | MDP 对应 |
+|----------|----------|----------|
+| **Belief (B)** | `memory/` STM+LTM 快照 + `observation_history` | 状态 S_t |
+| **Desire (D)** | System Prompt + `Desire` 配置 | 目标函数 G |
+| **Intention (I)** | `cognitive/decomposer.py` CoT 分解计划 | 策略 π |
+| **信念更新** | `bdi.perceive(observation)` | B_{t+1} = update(B_t, O_t) |
+| **意图修正** | `bdi.revise_intention(new_plan)` | I_{t+1} = replan(I_t, B_{t+1}, D) |
 
-原始声学数据 → PAM预处理 (带通滤波100-180kHz/脉冲检测/Click Train提取/特征工程) → 分析Agent (物种识别/行为分类/丰度估计) → 知识图谱 → 报告生成
+## 5. MDP 形式化
 
-## 6. MCP 集成
+在 t 时刻，Agent 的运作逻辑:
 
-| MCP 服务器 | 用途 |
-|------------|------|
-| Scholar MCP | 文献搜索与全文 |
-| Article MCP | PMC 全文 + 期刊评估 |
-| Filesystem MCP | 数据管理 |
-| Memory MCP | 知识图谱持久化 |
-| Echarts MCP | 可视化 |
+1. **策略函数**: π(A_t | O_t, M_t) → Action (LLM 决策)
+2. **状态转移**: S_{t+1} = f(S_t, A_t, O_{t+1})
+3. **记忆演化**: M_{t+1} = Φ(M_t, O_t, A_t)
+4. **环境动力学**: O_{t+1} ~ P(O | O_t, A_t)
+
+## 6. 多智能体拓扑
+
+```
+SOP 工作流 (默认):
+  literature → acoustic → ecology → conservation → critic
+
+对抗模式 (可选):
+  generator (literature) ↔ critic
+  多轮博弈 → 收敛到更优解
+
+层级模式:
+  orchestrator
+    ├── literature
+    ├── acoustic
+    ├── ecology
+    └── conservation
+```
 
 ## 7. 关键设计决策
 
 | 决策 | 选择 | 理由 |
 |------|------|------|
+| 架构 | 五层闭环 | 形式化 BDI + MDP + ReAct |
 | 语言 | Python 3.11+ | 生态/声学工具链 |
-| Agent框架 | Reasonix + Python bridge | DeepSeek优化 + 领域计算 |
-| 模型 | DeepSeek V3+R1 | 廉价token + cache + 中文 |
-| 知识图谱 | Neo4j + ChromaDB | 结构关系 + 语义检索 |
-| 声学分析 | librosa + obspy | 成熟生态 |
-| 技能格式 | SKILL.md | 可读、版本可控 |
+| 模型 | DeepSeek V3 + R1 | 廉价 token + prefix-cache + 中文 |
+| 任务分解 | CoT (默认) / ToT / GoT | 自适应复杂度 |
+| 记忆 | STM (窗口) + LTM (ChromaDB) | 双层存储 |
+| 序列化 | NL → Python/SQL/JSON | 三通道工程语言化 |
+| 校验 | AST + Schema + Safety | 执行前安全检查 |
+| 执行 | 子进程沙盒 | 隔离 + 超时 + 输出捕获 |
+| MAS | 图拓扑 (DAG) | 有向通信 + 条件边 |
+| 批判 | Critic Agent | 对抗博弈 + 质量审查 |
 
 ## 8. 安全与治理
 
-- 沙箱执行：代码隔离运行
-- 数据脱敏：GPS 自动模糊化
-- 审计日志：JSONL 决策记录
-- 人工关卡：野外方案须审批
-- 引用验证：自动验证文献存在性
+- **沙箱执行**: 子进程隔离 + 超时 + 输出限制
+- **安全检查**: AST 遍历检测危险操作
+- **人工审批**: field_survey / conservation_recommendation / data_deletion
+- **审计日志**: JSONL 格式记录所有决策
+- **数据脱敏**: GPS 坐标自动模糊化
+- **引用验证**: Critic Agent 验证文献存在性

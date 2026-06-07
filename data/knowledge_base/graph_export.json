@@ -1,6 +1,6 @@
 {
   "version": 216,
-  "updated_at": "2026-06-07T10:03:13.416467",
+  "updated_at": "2026-06-07T10:07:10.065685",
   "nodes": [
     [
       "direction:遗传与分子",
@@ -79,7 +79,7 @@
       "Species",
       "长江江豚",
       {
-        "name_zh": "长江江豚",
+        "name_cn": "长江江豚",
         "scientific_name": "Neophocaena asiaeorientalis asiaeorientalis",
         "iucn": "CR",
         "distribution": "长江中下游"
@@ -90,7 +90,7 @@
       "Species",
       "东溟江豚",
       {
-        "name_zh": "东溟江豚",
+        "name_cn": "东溟江豚",
         "scientific_name": "Neophocaena sunameri",
         "iucn": "NT",
         "distribution": "中国沿海、日本、韩国"
@@ -101,7 +101,7 @@
       "Species",
       "印太江豚",
       {
-        "name_zh": "印太江豚",
+        "name_cn": "印太江豚",
         "scientific_name": "Neophocaena phocaenoides",
         "iucn": "VU",
         "distribution": "印度-太平洋"
@@ -112,7 +112,7 @@
       "Species",
       "港湾鼠海豚",
       {
-        "name_zh": "港湾鼠海豚",
+        "name_cn": "港湾鼠海豚",
         "scientific_name": "Phocoena phocoena",
         "iucn": "LC",
         "distribution": "北大西洋/北太平洋"
@@ -123,7 +123,7 @@
       "Species",
       "加湾鼠海豚",
       {
-        "name_zh": "加湾鼠海豚",
+        "name_cn": "加湾鼠海豚",
         "scientific_name": "Phocoena sinus",
         "iucn": "CR",
         "distribution": "加利福尼亚湾"
@@ -134,7 +134,7 @@
       "Species",
       "白鱀豚",
       {
-        "name_zh": "白鱀豚",
+        "name_cn": "白鱀豚",
         "scientific_name": "Lipotes vexillifer",
         "iucn": "CR(PE)",
         "distribution": "长江 (原)"
@@ -145,7 +145,7 @@
       "Species",
       "中华白海豚",
       {
-        "name_zh": "中华白海豚",
+        "name_cn": "中华白海豚",
         "scientific_name": "Sousa chinensis",
         "iucn": "VU",
         "distribution": "中国东南沿海"
@@ -156,7 +156,7 @@
       "Institution",
       "中国科学院水生生物研究所",
       {
-        "name_zh": "中国科学院水生生物研究所",
+        "name_cn": "中国科学院水生生物研究所",
         "name_en": "IHB-CAS",
         "country": "中国"
       }
@@ -166,7 +166,7 @@
       "Institution",
       "淡水渔业研究中心",
       {
-        "name_zh": "淡水渔业研究中心",
+        "name_cn": "淡水渔业研究中心",
         "name_en": "FFRC-CAFS",
         "country": "中国"
       }
@@ -176,7 +176,7 @@
       "Institution",
       "南京师范大学",
       {
-        "name_zh": "南京师范大学",
+        "name_cn": "南京师范大学",
         "name_en": "NNU",
         "country": "中国"
       }
@@ -186,7 +186,7 @@
       "Institution",
       "复旦大学",
       {
-        "name_zh": "复旦大学",
+        "name_cn": "复旦大学",
         "name_en": "Fudan",
         "country": "中国"
       }
@@ -196,7 +196,7 @@
       "Institution",
       "中山大学",
       {
-        "name_zh": "中山大学",
+        "name_cn": "中山大学",
         "name_en": "SYSU",
         "country": "中国"
       }
@@ -206,7 +206,7 @@
       "Institution",
       "中科院深海所",
       {
-        "name_zh": "中科院深海所",
+        "name_cn": "中科院深海所",
         "name_en": "IDSSE",
         "country": "中国"
       }
@@ -216,7 +216,7 @@
       "Institution",
       "自然资源部第三海洋研究所",
       {
-        "name_zh": "自然资源部第三海洋研究所",
+        "name_cn": "自然资源部第三海洋研究所",
         "name_en": "TIO-MNR",
         "country": "中国"
       }
@@ -226,7 +226,7 @@
       "Institution",
       "日本渔业研究教育机构",
       {
-        "name_zh": "日本渔业研究教育机构",
+        "name_cn": "日本渔业研究教育机构",
         "name_en": "FRA-Japan",
         "country": "日本"
       }
@@ -236,7 +236,7 @@
       "Institution",
       "韩国海洋研究所",
       {
-        "name_zh": "韩国海洋研究所",
+        "name_cn": "韩国海洋研究所",
         "name_en": "KIOST",
         "country": "韩国"
       }
@@ -246,7 +246,7 @@
       "Institution",
       "香港大学",
       {
-        "name_zh": "香港大学",
+        "name_cn": "香港大学",
         "name_en": "HKU",
         "country": "中国香港"
       }
@@ -256,7 +256,7 @@
       "Institution",
       "伦敦动物学会",
       {
-        "name_zh": "伦敦动物学会",
+        "name_cn": "伦敦动物学会",
         "name_en": "ZSL",
         "country": "英国"
       }
@@ -266,7 +266,7 @@
       "Institution",
       "俄罗斯科学院",
       {
-        "name_zh": "俄罗斯科学院",
+        "name_cn": "俄罗斯科学院",
         "name_en": "RAS",
         "country": "俄罗斯"
       }
@@ -276,7 +276,7 @@
       "Researcher",
       "王丁",
       {
-        "name_zh": "王丁",
+        "name_cn": "王丁",
         "name_en": "Wang Ding",
         "institution": "中国科学院水生生物研究所",
         "h_index": 38,
@@ -294,7 +294,7 @@
       "Researcher",
       "王克雄",
       {
-        "name_zh": "王克雄",
+        "name_cn": "王克雄",
         "name_en": "Wang Kexiong",
         "institution": "中国科学院水生生物研究所",
         "h_index": 24,
@@ -311,7 +311,7 @@
       "Researcher",
       "郑劲松",
       {
-        "name_zh": "郑劲松",
+        "name_cn": "郑劲松",
         "name_en": "Zheng Jinsong",
         "institution": "中国科学院水生生物研究所",
         "h_index": 18,
@@ -328,7 +328,7 @@
       "Researcher",
       "梅志刚",
       {
-        "name_zh": "梅志刚",
+        "name_cn": "梅志刚",
         "name_en": "Mei Zhigang",
         "institution": "中国科学院水生生物研究所",
         "h_index": 22,
@@ -346,7 +346,7 @@
       "Researcher",
       "郝玉江",
       {
-        "name_zh": "郝玉江",
+        "name_cn": "郝玉江",
         "name_en": "Hao Yujiang",
         "institution": "中国科学院水生生物研究所",
         "h_index": 18,
@@ -363,7 +363,7 @@
       "Researcher",
       "王智伟",
       {
-        "name_zh": "王智伟",
+        "name_cn": "王智伟",
         "name_en": "Wang Zhiwei",
         "institution": "中国科学院水生生物研究所",
         "h_index": 17,
@@ -380,7 +380,7 @@
       "Researcher",
       "陈敏敏",
       {
-        "name_zh": "陈敏敏",
+        "name_cn": "陈敏敏",
         "name_en": "Chen Minmin",
         "institution": "中国科学院水生生物研究所",
         "h_index": 12,
@@ -397,7 +397,7 @@
       "Researcher",
       "方亮",
       {
-        "name_zh": "方亮",
+        "name_cn": "方亮",
         "name_en": "Fang Liang",
         "institution": "中国科学院水生生物研究所",
         "h_index": 10,
@@ -414,7 +414,7 @@
       "Researcher",
       "徐跑",
       {
-        "name_zh": "徐跑",
+        "name_cn": "徐跑",
         "name_en": "Xu Pao",
         "institution": "淡水渔业研究中心",
         "h_index": 16,
@@ -431,7 +431,7 @@
       "Researcher",
       "刘凯",
       {
-        "name_zh": "刘凯",
+        "name_cn": "刘凯",
         "name_en": "Liu Kai",
         "institution": "淡水渔业研究中心",
         "h_index": 12,
@@ -449,7 +449,7 @@
       "Researcher",
       "杨彦平",
       {
-        "name_zh": "杨彦平",
+        "name_cn": "杨彦平",
         "name_en": "Yang Yanping",
         "institution": "淡水渔业研究中心",
         "h_index": 8,
@@ -466,7 +466,7 @@
       "Researcher",
       "方弟安",
       {
-        "name_zh": "方弟安",
+        "name_cn": "方弟安",
         "name_en": "Fang Di'an",
         "institution": "淡水渔业研究中心",
         "h_index": 10,
@@ -483,7 +483,7 @@
       "Researcher",
       "徐东坡",
       {
-        "name_zh": "徐东坡",
+        "name_cn": "徐东坡",
         "name_en": "Xu Dongpo",
         "institution": "淡水渔业研究中心",
         "h_index": 10,
@@ -500,7 +500,7 @@
       "Researcher",
       "王银平",
       {
-        "name_zh": "王银平",
+        "name_cn": "王银平",
         "name_en": "Wang Yinping",
         "institution": "淡水渔业研究中心",
         "h_index": 8,
@@ -517,7 +517,7 @@
       "Researcher",
       "段金荣",
       {
-        "name_zh": "段金荣",
+        "name_cn": "段金荣",
         "name_en": "Duan Jinrong",
         "institution": "淡水渔业研究中心",
         "h_index": 8,
@@ -534,7 +534,7 @@
       "Researcher",
       "张敏莹",
       {
-        "name_zh": "张敏莹",
+        "name_cn": "张敏莹",
         "name_en": "Zhang Minying",
         "institution": "淡水渔业研究中心",
         "h_index": 8,
@@ -551,7 +551,7 @@
       "Researcher",
       "蔺丹清",
       {
-        "name_zh": "蔺丹清",
+        "name_cn": "蔺丹清",
         "name_en": "Lin Danqing",
         "institution": "淡水渔业研究中心",
         "h_index": 5,
@@ -568,7 +568,7 @@
       "Researcher",
       "张家路",
       {
-        "name_zh": "张家路",
+        "name_cn": "张家路",
         "name_en": "Zhang Jialu",
         "institution": "淡水渔业研究中心",
         "h_index": 5,
@@ -585,7 +585,7 @@
       "Researcher",
       "应聪萍",
       {
-        "name_zh": "应聪萍",
+        "name_cn": "应聪萍",
         "name_en": "Ying Congping",
         "institution": "淡水渔业研究中心",
         "h_index": 5,
@@ -602,7 +602,7 @@
       "Researcher",
       "尹登花",
       {
-        "name_zh": "尹登花",
+        "name_cn": "尹登花",
         "name_en": "Yin Denghua",
         "institution": "淡水渔业研究中心",
         "h_index": 5,
@@ -619,7 +619,7 @@
       "Researcher",
       "轩中亚",
       {
-        "name_zh": "轩中亚",
+        "name_cn": "轩中亚",
         "name_en": "Xuan Zhongya",
         "institution": "淡水渔业研究中心",
         "h_index": 5,
@@ -636,7 +636,7 @@
       "Researcher",
       "杨光",
       {
-        "name_zh": "杨光",
+        "name_cn": "杨光",
         "name_en": "Yang Guang",
         "institution": "南京师范大学",
         "h_index": 28,
@@ -654,7 +654,7 @@
       "Researcher",
       "李松海",
       {
-        "name_zh": "李松海",
+        "name_cn": "李松海",
         "name_en": "Li Songhai",
         "institution": "中科院深海所",
         "h_index": 22,
@@ -671,7 +671,7 @@
       "Researcher",
       "王先艳",
       {
-        "name_zh": "王先艳",
+        "name_cn": "王先艳",
         "name_en": "Wang Xianyan",
         "institution": "自然资源部第三海洋研究所",
         "h_index": 10,
@@ -688,7 +688,7 @@
       "Researcher",
       "刘佳佳",
       {
-        "name_zh": "刘佳佳",
+        "name_cn": "刘佳佳",
         "name_en": "Liu Jiajia",
         "institution": "复旦大学",
         "h_index": 12,
@@ -705,7 +705,7 @@
       "Researcher",
       "Tomonari Akamatsu",
       {
-        "name_zh": "Tomonari Akamatsu",
+        "name_cn": "Tomonari Akamatsu",
         "name_en": "Akamatsu T",
         "institution": "日本渔业研究教育机构",
         "h_index": 38,
@@ -722,7 +722,7 @@
       "Researcher",
       "Leszek Karczmarski",
       {
-        "name_zh": "Leszek Karczmarski",
+        "name_cn": "Leszek Karczmarski",
         "name_en": "Karczmarski L",
         "institution": "香港大学",
         "h_index": 32,
@@ -739,7 +739,7 @@
       "Researcher",
       "Samuel Turvey",
       {
-        "name_zh": "Samuel Turvey",
+        "name_cn": "Samuel Turvey",
         "name_en": "Turvey ST",
         "institution": "伦敦动物学会",
         "h_index": 28,
@@ -756,7 +756,7 @@
       "Researcher",
       "Popov VV",
       {
-        "name_zh": "Popov VV",
+        "name_cn": "Popov VV",
         "name_en": "Popov VV",
         "institution": "俄罗斯科学院",
         "h_index": 22,

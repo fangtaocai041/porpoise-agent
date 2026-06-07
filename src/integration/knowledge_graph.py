@@ -291,7 +291,7 @@ class KnowledgeGraph:
         node = self.add_node(
             id=rid, type="Researcher", label=name,
             properties={
-                "name_cn": name,
+                "name_zh": name,
                 "name_en": english_name,
                 "institution": institution,
                 "h_index": h_index,
@@ -314,7 +314,7 @@ class KnowledgeGraph:
                         country: str = "中国") -> Node:
         return self.add_node(
             id=f"institution:{name}", type="Institution", label=name,
-            properties={"name_cn": name, "name_en": english_name, "country": country},
+            properties={"name_zh": name, "name_en": english_name, "country": country},
         )
 
     def add_paper(self, title: str, doi: str = "", year: int = 0,
@@ -345,7 +345,7 @@ class KnowledgeGraph:
         node = self.add_node(
             id=sid, type="Species", label=name,
             properties={
-                "name_cn": name, "scientific_name": scientific_name,
+                "name_zh": name, "scientific_name": scientific_name,
                 "iucn": iucn, "distribution": distribution,
             },
         )

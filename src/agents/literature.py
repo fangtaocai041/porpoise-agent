@@ -139,7 +139,8 @@ class LiteratureAgent(BaseAgent):
         cognitive_papers = await self._try_cognitive_search(query)
         if cognitive_papers:
             logger.info(f"cognitive-search-engine: {len(cognitive_papers)} papers")
-            # 自动保存到 Obsidian (异步，不阻塞)
+            # 更新知识图谱 + 自动保存到 Obsidian
+            self._update_knowledge_graph(cognitive_papers)
             self._auto_save_to_obsidian(cognitive_papers, query)
             return cognitive_papers
 
@@ -182,8 +183,9 @@ class LiteratureAgent(BaseAgent):
                 seen_dois.add(doi)
             deduped.append(paper)
 
-        # Fallback 结果也保存到 Obsidian
+        # Fallback 结果也更新知识图谱 + Obsidian
         if deduped:
+            self._update_knowledge_graph(deduped[:5])
             self._auto_save_to_obsidian(deduped[:5], query)
 
         return deduped
@@ -199,6 +201,31 @@ class LiteratureAgent(BaseAgent):
         except Exception as e:
             logger.debug(f"Zotero search skipped: {e}")
             return []
+
+    def _update_knowledge_graph(self, papers: list[dict]):
+        """自动将新论文添加到动态知识图谱"""
+        try:
+            from data.knowledge_base.porpoise_knowledge_graph import get_graph
+            g = get_graph()
+            for paper in papers[:5]:
+                title = paper.get("title", "")
+                doi = paper.get("doi", "")
+                year = paper.get("year", 0)
+                journal = paper.get("journal", "")
+                authors = paper.get("authors", [])
+                if not title:
+                    continue
+                # 自动检测物种
+                species = []
+                title_lower = title.lower()
+                if "finless porpoise" in title_lower or "neophocaena" in title_lower or "江豚" in title_lower:
+                    species.append("长江江豚")
+                if "yangtze" in title_lower:
+                    species.append("长江江豚")
+                g.add_paper(title, doi, year, journal, authors, species)
+            logger.debug(f"Knowledge graph updated with {len(papers[:5])} papers")
+        except Exception as e:
+            logger.debug(f"Knowledge graph update skipped: {e}")
 
     def _auto_save_to_obsidian(self, papers: list[dict], query: str):
         """自动保存新论文到 Obsidian 文献笔记 (前 3 篇)"""

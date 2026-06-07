@@ -20,7 +20,7 @@
   - BELONGS_TO:    物种 → 方向
 
 用法:
-    from data.knowledge_base.porpoise_knowledge_graph import get_graph
+    from src.integration.knowledge_graph import get_graph
 
     g = get_graph()
     # 查询某单位的所有江豚研究者

@@ -205,7 +205,7 @@ class LiteratureAgent(BaseAgent):
     def _update_knowledge_graph(self, papers: list[dict]):
         """自动将新论文添加到动态知识图谱"""
         try:
-            from data.knowledge_base.porpoise_knowledge_graph import get_graph
+            from src.integration import get_graph
             g = get_graph()
             for paper in papers[:5]:
                 title = paper.get("title", "")

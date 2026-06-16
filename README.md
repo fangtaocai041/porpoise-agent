@@ -35,6 +35,7 @@ P₁ 是从三角核心衍生的第一个项目。它不重新发明轮子——
     C   conflict-arbiter → 冲突仲裁
 ```
 ```
+
 ---
 ```
 ## 🧩 这个项目是什么
@@ -47,6 +48,7 @@ P₁ 是从三角核心衍生的第一个项目。它不重新发明轮子——
 >
 > 我们说：你也不能用去年的种群数据预测今年的江豚分布。
 ```
+
 ---
 ```
 ## ⚡ 快速上手
@@ -59,6 +61,7 @@ python src/cli.py analyze --species "Neophocaena asiaeorientalis"
 python -c "from src import get_adapter; print(get_adapter().health())"
 ```
 ```
+
 ---
 ```
 ## 🚀 核心能力
@@ -78,6 +81,7 @@ python -c "from src import get_adapter; print(get_adapter().health())"
 | [culter-agent](../culter-agent/) | P₃ | 🐟 鲌类专研 |
 | [conflict-arbiter](../conflict-arbiter/) | C | 🔥 冲突仲裁 |
 ```
+
 ---
 ---
 
@@ -100,6 +104,7 @@ python -c "from src import get_adapter; print(get_adapter().health())"
   🐟 culter-agent      → 鲌类专研 (P₃)
   🔥 conflict-arbiter  → 冲突仲裁 (C)
 ```
+
 > 🌊 万物皆变 · Panta Rhei
 >
 > 🏛️ 赫拉克利特说：人不能两次踏进同一条河流。

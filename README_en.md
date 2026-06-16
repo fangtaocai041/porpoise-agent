@@ -198,6 +198,7 @@ porpoise-agent/
 | **coilia-agent** | P₂ Coilia | Sister project |
 | **culter-agent** | P₃ Culter | Sister project |
 ```
+
 ---
 ```
 ## 📜 License
@@ -211,6 +212,7 @@ MIT License © 2026 Liu Kai Research Group, FFRC-----------|:--------:|:--------
 | [culter-agent](../culter-agent/) | P₃ | 🐟 Culter Research |
 | [conflict-arbiter](../conflict-arbiter/) | C | 🔥 Conflict Arbiter |
 ```
+
 ---
 ---
 
@@ -233,6 +235,7 @@ Derived Projects (open N):
   🐟 culter-agent      → Culter Research (P₃)
   🔥 conflict-arbiter  → Conflict Arbitration (C)
 ```
+
 > 🌊 Everything Flows · Panta Rhei
 >
 > 🏛️ Heraclitus said: No man ever steps in the same river twice.

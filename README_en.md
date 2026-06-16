@@ -189,7 +189,7 @@ porpoise-agent/
 ---
 
 ## 🔗 Related Projects
-`
+```
 | 🏗️ Project | 🎯 Role | 🔗 Relationship |
 |:-----------|:--------|:----------------|
 | **eon-core** | Coordinator | Vertex V2 — porpoise domain agent |
@@ -197,11 +197,11 @@ porpoise-agent/
 | **cognitive-search-engine** | Search V1 | Literature search and scoring |
 | **coilia-agent** | P₂ Coilia | Sister project |
 | **culter-agent** | P₃ Culter | Sister project |
-`
+```
 ---
-`
+```
 ## 📜 License
-`
+```
 MIT License © 2026 Liu Kai Research Group, FFRC-----------|:--------:|:--------|
 | [fish-ecology-assistant](../fish-ecology-assistant/) | V0 | 📦 Knowledge Supply |
 | [cognitive-search-engine](../cognitive-search-engine/) | V1 | 🔍 Search Verification |
@@ -210,29 +210,29 @@ MIT License © 2026 Liu Kai Research Group, FFRC-----------|:--------:|:--------
 | [coilia-agent](../coilia-agent/) | P₂ | 🐟 Coilia Research |
 | [culter-agent](../culter-agent/) | P₃ | 🐟 Culter Research |
 | [conflict-arbiter](../conflict-arbiter/) | C | 🔥 Conflict Arbiter |
-`
+```
 ---
 ---
 
-`
+```
 ## 🔗 Ecosystem
-`
+```
 > 🔥 Together infinite power, apart top expert engines.
-`
+```
 This project is the Porpoise Domain Expert Engine (P1) in the SanShengWanWu ecosystem.
-`
-`
+```
+```
 Triangle Core (sealed 3):
   📦 fish-ecology-assistant    → Knowledge Supply (V0)
   🔍 cognitive-search-engine   → Search Verification (V1)
   ⚙️ eon-core                  → Coordinator
-`
+```
 Derived Projects (open N):
   🐬 porpoise-agent    → Porpoise Research (P₁)
   🐟 coilia-agent      → Coilia Research (P₂)
   🐟 culter-agent      → Culter Research (P₃)
   🔥 conflict-arbiter  → Conflict Arbitration (C)
-`
+```
 > 🌊 Everything Flows · Panta Rhei
 >
 > 🏛️ Heraclitus said: No man ever steps in the same river twice.

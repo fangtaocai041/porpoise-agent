@@ -2,22 +2,25 @@
 
 **P₁ 万物衍生** — 长江江豚专研 · NBHF 声学 · 种群评估 · 栖息地建模。
 
-> 万物皆变 · Panta Rhei
+> 🌊 万物皆变 · Panta Rhei
 >
 > 江豚在长江里游了 2500 万年。
 > 我们的代码，是试图理解它们的另一种语言。
+
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
 
 [English](README.md) · [中文版](README.zh.md) · [更新日志](CHANGELOG.md)
 
 ---
 
-## 核心哲学
+## 🎯 核心哲学
 
 > 世界是动态的，知识是暂时的，涌现是常态。
 
 P₁ 是从三角核心衍生的第一个项目。它不重新发明轮子——S/V0 提供物种知识，V/V1 提供搜索验证，Coordinator 提供协调调度。P₁ 只做一件事：**研究江豚**。
 
-### 在万物中的角色
+### 🔗 在万物中的角色
 
 ```
 三生万物架构：
@@ -34,7 +37,7 @@ P₁ 是从三角核心衍生的第一个项目。它不重新发明轮子——
 
 ---
 
-## 这个项目是什么
+## 🧩 这个项目是什么
 
 长江江豚（*Neophocaena asiaeorientalis*）是长江里唯一的哺乳动物。2017 年种群调查约 1012 头，2022 年约 1249 头——禁渔后第一次止跌回升。
 
@@ -46,7 +49,7 @@ P₁ 是从三角核心衍生的第一个项目。它不重新发明轮子——
 
 ---
 
-## 快速上手
+## ⚡ 快速上手
 
 ```bash
 # 分析江豚
@@ -58,9 +61,9 @@ python -c "from src import get_adapter; print(get_adapter().health())"
 
 ---
 
-## 核心能力
+## 🚀 核心能力
 
-| 能力 | 说明 |
+| 🚀 能力 | 📝 说明 |
 |:-----|:------|
 | **NBHF 声学检测** | 100-180 kHz 窄带高频信号 |
 | **栖息地建模** | 长江干流 + 洞庭湖 + 鄱阳湖 |
@@ -70,7 +73,12 @@ python -c "from src import get_adapter; print(get_adapter().health())"
 
 ---
 
-> 鱼在水里，你在岸上，代码在中间。
-> 愿声学信号和江豚的歌声一样清晰。
+> 🌊 万物皆变 · Panta Rhei
 >
-> **最后更新: 2026-06-21 · Reasonix Code · DeepSeek 驱动**
+> 🏛️ 赫拉克利特说：人不能两次踏进同一条河流。
+>
+> 💻 我们说：你也不能用去年的种群数据预测今年的江豚分布。
+>
+> **📅 最后更新: 2026-06-21 · 🖥️ Reasonix Code · ⚡ DeepSeek 驱动**
+
+[⬆ 回到顶部](#)

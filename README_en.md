@@ -1,6 +1,6 @@
 # Porpoise Agent 🐬
 
-**P₁ 万物衍生** — Yangtze Finless Porpoise Research · Multi-Agent System · BDI Decision · 5 Cognitive Layers · External Integrations
+**P₁ 万物衍生** — Yangtze Finless Porpoise Research · Multi-Agent System · BDI Decision · 5 Cognitive Layers
 
 > 🌊 Everything Flows · Panta Rhei
 >
@@ -9,9 +9,8 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
-[![version](https://img.shields.io/badge/version-2.1.0-8b5cf6)]()
+[![version](https://img.shields.io/badge/version-0.1.0-8b5cf6)]()
 [![agents](https://img.shields.io/badge/agents-7-f59e0b)]()
-[![tests](https://img.shields.io/badge/tests-4_suites-22c55e)]()
 
 [English](README.md) · [中文](README_en.md) · [Changelog](CHANGELOG.md)
 
@@ -19,18 +18,19 @@
 
 ## 📋 Introduction
 
-**Porpoise Agent** is an AI Agent framework for Yangtze finless porpoise (*Neophocaena asiaeorientalis asiaeorientalis*) research, built on a **Multi-Agent System (MAS)** with a **BDI cognitive architecture**. It automates literature search, acoustic analysis, ecological modeling, and conservation assessment workflows.
+**Porpoise Agent** is an AI Agent framework for Yangtze finless porpoise (*Neophocaena asiaeorientalis asiaeorientalis*) research, built on a **Multi-Agent System (MAS)** with a **BDI cognitive architecture** and **5-layer dimensional evolution engine**. It automates literature search, NBHF acoustic analysis, ecological modeling, and conservation assessment.
 
 ### 🚀 Capabilities
 
 | 🚀 Capability | 📝 Description |
 |:--------------|:---------------|
-| 🧠 **Multi-Agent System** | 7 specialized agents collaborating: Literature, Acoustic, Ecology, Conservation, Critic, Orchestrator |
-| 🔍 **BDI Decision Engine** | Belief-Desire-Intention state machine for reasoning and action planning |
-| 📚 **Three-Tier Memory** | Short-term (context window) + Long-term (ChromaDB vector store / RAG) |
-| 🔌 **Quadruple Integration** | cognitive-search-engine, Neo4j graph, Zotero library, Obsidian vault |
-| 🛡️ **Sandbox Execution** | Isolated Python runtime for safe code execution |
-| 🧪 **Test Coverage** | BDI state machine + Memory + Serializer + 7 workflow scenarios + Stress tests |
+| 🧠 **Multi-Agent System** | 7 specialized agents: Orchestrator, Literature, Acoustic, Ecology, Conservation, Critic + Topology |
+| 🔍 **BDI Decision Engine** | Belief-Desire-Intention state machine — `BDICoordinator` |
+| 📚 **Three-Tier Memory** | STM (context) + LTM (ChromaDB vector store) + Manager |
+| 🔄 **Dimensional Evolution** | 5-layer cognitive architecture: Loop → MesoExperiment → ResilienceEngine → STVCore → DimensionalEvolution |
+| 🔌 **Quadruple Integration** | cognitive-search-engine, Neo4j, Zotero, Obsidian |
+| 🛡️ **Sandbox Execution** | Isolated Python runtime via `SandboxExecutor` |
+| 🧪 **Test Coverage** | BDI state machine + Memory + Serializer + workflow scenarios |
 
 ---
 
@@ -130,79 +130,50 @@ print(result.output)
 
 ---
 
-## 📚 API Reference
-
-### `porpoise_agent.src.agents`
-
-| 🏗️ Class | 📝 Description |
-|:----------|:---------------|
-| `OrchestratorAgent` | Central scheduler: NLU → route → multi-agent dispatch → aggregate |
-| `LiteratureAgent` | Literature search via cognitive-search-engine |
-| `AcousticAgent` | NBHF echolocation signal analysis |
-| `EcologyAgent` | Habitat assessment and population dynamics |
-| `ConservationAgent` | Threat level assessment and conservation recommendations |
-| `CriticAgent` | Self-reflection and quality review |
-| `BaseAgent` | Agent base class with BDI + ToolRegistry |
-
-### `porpoise_agent.src.cognitive`
-
-| 🏗️ Class | 📝 Description |
-|:----------|:---------------|
-| `BDICoordinator` | BDI state machine |
-| `ReActLoop` | Reasoning-Acting cycle |
-| `TaskDecomposer` | CoT / ToT / GoT decomposition strategies |
-| `Critic` | Credit assignment + feedback loop |
-
-### `porpoise_agent.src.execution`
-
-| 🏗️ Class/Function | 📝 Description |
-|:-------------------|:---------------|
-| `SandboxExecutor` | Isolated Python code execution |
-| `ToolRegistry` | Tool registration and discovery |
-| `APIClient` | PubMed / CrossRef / Semantic Scholar client |
-| `execute_safe(code)` | Quick safe-execution function |
-
----
-
-## 📁 Architecture
+## 📚 Project Structure
 
 ```
 porpoise-agent/
-├── README.md / README_en.md
-├── pyproject.toml
-│
 ├── src/
-│   ├── __init__.py              ← Version + architecture declaration
-│   ├── cli.py                   ← 4 CLI commands
-│   ├── agents/                  ← Multi-Agent System (7 agents)
-│   ├── cognitive/               ← BDI + ReAct + TaskDecomposer
-│   ├── memory/                  ← STM + LTM (ChromaDB) + Manager
-│   ├── mapping/                 ← Router + Serializer + Validator
-│   ├── execution/               ← Sandbox + ToolRegistry + API clients
-│   ├── interaction/             ← NLU + Response rendering
-│   ├── integration/             ← External system bridges
-│   ├── prompts/                 ← System prompts
-│   └── utils/                   ← Config + logging + types
-│
-├── config/                      ← agent.yaml, models.yaml, mcp_servers.yaml
-├── tests/                       ← 5 test suites (24+ test cases)
-├── data/                        ← Knowledge base data
-├── docs/                        ← Documentation
-├── examples/                    ← Example scripts
-└── scripts/                     ← Utility scripts
+│   ├── cli.py                    ← CLI 入口 (porpoise doctor/chat/run/topology)
+│   ├── agents/                   ← Multi-Agent System (7 agents)
+│   │   ├── orchestrator.py       ← OrchestratorAgent 调度器
+│   │   ├── literature.py         ← LiteratureAgent 文献搜索
+│   │   ├── acoustic.py           ← AcousticAgent NBHF 声学分析
+│   │   ├── ecology.py            ← EcologyAgent 栖息地评估
+│   │   ├── conservation.py       ← ConservationAgent 保护建议
+│   │   ├── critic.py             ← CriticAgent 自反思审查
+│   │   ├── topology.py           ← MAS 拓扑管理
+│   │   └── base.py               ← BaseAgent 基类
+│   ├── agent/                    ← 5 层认知架构
+│   │   ├── orchestrator.py       ← 领域编排器
+│   │   ├── loop.py               ← ReAct 循环
+│   │   ├── meso_experiment.py    ← 中层实验引擎
+│   │   ├── resilience_engine.py  ← 韧性引擎
+│   │   ├── stv_core.py           ← STV 核心
+│   │   ├── dimensional_evolution.py ← 维度进化
+│   │   ├── memory.py             ← 记忆管理
+│   │   ├── tools.py              ← 工具注册
+│   │   └── deepseek_optimizer.py ← DeepSeek 优化器
+│   ├── cognitive/                ← BDI + ReAct + TaskDecomposer
+│   ├── memory/                   ← STM + LTM (ChromaDB) + Manager
+│   ├── execution/                ← Sandbox + ToolRegistry + APIClient
+│   ├── interaction/              ← NLU 意图识别 + Response 渲染
+│   ├── mapping/                  ← Router + Serializer + Validator
+│   ├── integration/              ← 外部系统桥接
+│   ├── knowledge/                ← 知识图谱
+│   ├── prompts/                  ← 系统提示词
+│   ├── skills/                   ← 技能模块
+│   ├── tools/                    ← 工具集
+│   └── utils/                    ← Config + logging + types
+├── config/                       ← agent.yaml / models.yaml / mcp_servers.yaml
+├── data/                         ← 知识库数据
+├── docs/                         ← 文档
+├── examples/                     ← 示例脚本
+├── external/                     ← 外部依赖
+├── scripts/                      ← 工具脚本
+└── tests/                        ← 5 测试套件
 ```
-
-### 🧩 Module Responsibilities
-
-| 🧩 Module | 🎯 Responsibility | 🏗️ Key Classes |
-|:----------|:------------------|:---------------|
-| `agents/` | Multi-Agent collaboration | `OrchestratorAgent`, `LiteratureAgent`, `AcousticAgent` |
-| `cognitive/` | BDI reasoning + ReAct loop | `BDICoordinator`, `ReActLoop`, `TaskDecomposer` |
-| `memory/` | Context + vector retrieval | `MemoryManager`, `ShortTermMemory`, `LongTermMemory` |
-| `execution/` | Sandbox + API clients | `SandboxExecutor`, `ToolRegistry`, `APIClient` |
-| `interaction/` | Intent recognition | `NLUProcessor`, `ResponseRenderer` |
-| `mapping/` | Routing + serialization | `IntentRouter`, `EngineeringSerializer` |
-| `integration/` | External bridges | `CognitiveSearchAdapter`, `KnowledgeGraph` |
 
 ---
 
@@ -217,28 +188,6 @@ porpoise-agent/
 
 ---
 
-## ⚙️ Configuration
-
-### `config/agent.yaml`
-Runtime configuration for all 5 layers (model selection, tool permissions, agent parameters).
-
-### `config/models.yaml`
-Model routing and pricing:
-```yaml
-models:
-  - name: deepseek-chat
-    context_window: 64000
-    purpose: general_reasoning
-  - name: deepseek-reasoner
-    context_window: 64000
-    purpose: complex_reasoning
-```
-
-### `config/mcp_servers.yaml`
-MCP tool service registration (scholar search, article full-text, filesystem, etc.).
-
----
-
 ## 🔗 Related Projects
 
 | 🏗️ Project | 🎯 Role | 🔗 Relationship |
@@ -246,25 +195,8 @@ MCP tool service registration (scholar search, article full-text, filesystem, et
 | **eon-core** | Coordinator | Vertex V2 — porpoise domain agent |
 | **fish-ecology-assistant** | Knowledge V0 | Species knowledge base |
 | **cognitive-search-engine** | Search V1 | Literature search and scoring |
-| **coilia-agent** | P₂ Coilia | Sister project (sister agent) |
+| **coilia-agent** | P₂ Coilia | Sister project |
 | **culter-agent** | P₃ Culter | Sister project |
-
----
-
-## 🤝 Contributing
-
-1. Fork this repository
-2. Create a feature branch: `git checkout -b feature/xxx`
-3. Commit changes: `git commit -m "description"`
-4. Push branch: `git push origin feature/xxx`
-5. Create a Pull Request
-
-### 🧪 Running Tests
-
-```bash
-cd porpoise-agent
-python -m pytest tests/ -v
-```
 
 ---
 
@@ -280,6 +212,6 @@ MIT License © 2026 Liu Kai Research Group, FFRC
 >
 > 💻 We say: You can't analyze today's porpoise data with last month's code.
 >
-> **📅 Last updated: 2026-06-21 · 🖥️ Environment: Reasonix Code · ⚡ Powered by DeepSeek**
+> **📅 Last updated: 2026-06-21 · 🖥️ Reasonix Code · ⚡ Powered by DeepSeek**
 
 [⬆ Back to top](#)

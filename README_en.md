@@ -1,4 +1,4 @@
-﻿# Porpoise Agent 🐬
+# Porpoise Agent 🐬
 
 **P₁ 万物衍生** — Yangtze Finless Porpoise Research · Multi-Agent System · BDI Decision · 5 Cognitive Layers
 

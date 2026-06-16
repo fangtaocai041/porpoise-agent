@@ -1,4 +1,4 @@
-﻿# Porpoise Agent 🐬
+# Porpoise Agent 🐬
 
 **P₁ 万物衍生** — 长江江豚专研 · NBHF 声学 · 种群评估 · 栖息地建模。
 
@@ -66,26 +66,8 @@ python -c "from src import get_adapter; print(get_adapter().health())"
 ```
 ## 🚀 核心能力
 ```
-| 🚀 能力 | 📝 说明 |
-|:-----|:------|
-| **NBHF 声学检测** | 100-180 kHz 窄带高频信号 |
-| **栖息地建模** | 长江干流 + 洞庭湖 + 鄱阳湖 |
-| **种群评估** | 2017 / 2022 / 2025 年对比 |
-| **威胁评估** | 航运 / 渔业 / 水利工程 / 污染 |
-| **MoE 知识库** | 26 文件，江豚专属 |---------|:--------:|:--------|
-| [fish-ecology-assistant](../fish-ecology-assistant/) | V0 | 📦 知识供给 |
-| [cognitive-search-engine](../cognitive-search-engine/) | V1 | 🔍 搜索验证 |
-| [eon-core](../eon-core/) | Coord | ⚙️ 协调内核 |
-| [porpoise-agent](../porpoise-agent/) | P₁ | 🐬 江豚专研 |
-| [coilia-agent](../coilia-agent/) | P₂ | 🐟 刀鲚专研 |
-| [culter-agent](../culter-agent/) | P₃ | 🐟 鲌类专研 |
-| [conflict-arbiter](../conflict-arbiter/) | C | 🔥 冲突仲裁 |
-```
 
----
----
 
-```
 ## 🔗 生态体系
 ```
 > 🔥 和则无穷力量，分则顶尖专家引擎。

@@ -1,47 +1,30 @@
-<div align="center">
-  <h1>🐬 Porpoise Agent</h1>
-  <p><strong>Yangtze Finless Porpoise Research Agent Framework</strong> — Multi-Agent System · BDI Decision · 5 Cognitive Layers · External Integrations</p>
-  <p>Python 3.11+ · 7 Agents · 5 Cognitive Layers · 4 Integrations</p>
-</div>
+# Porpoise Agent 🐬
 
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>
-  <a href="#"><img src="https://img.shields.io/badge/version-2.1.0-8b5cf6?style=flat-square" alt="v2.1.0"></a>
-  <a href="#"><img src="https://img.shields.io/badge/python-3.11+-3776AB?style=flat-square" alt="Python"></a>
-  <a href="#"><img src="https://img.shields.io/badge/agents-7-f59e0b?style=flat-square" alt="7 Agents"></a>
-  <a href="#"><img src="https://img.shields.io/badge/tests-4_suites-22c55e?style=flat-square" alt="Tests"></a>
-</p>
+**P₁ 万物衍生** — Yangtze Finless Porpoise Research · Multi-Agent System · BDI Decision · 5 Cognitive Layers · External Integrations
 
-<p align="center">
-  🇨🇳 <a href="README.md">中文</a>
-</p>
+> 🌊 Everything Flows · Panta Rhei
+>
+> The finless porpoise has swum the Yangtze for 25 million years.
+> Our code is another language trying to understand them.
 
----
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
+[![version](https://img.shields.io/badge/version-2.1.0-8b5cf6)]()
+[![agents](https://img.shields.io/badge/agents-7-f59e0b)]()
+[![tests](https://img.shields.io/badge/tests-4_suites-22c55e)]()
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Quick Start](#quick-start)
-- [Core Features](#core-features)
-- [CLI Commands](#cli-commands)
-- [API Reference](#api-reference)
-- [Architecture](#architecture)
-- [External Integrations](#external-integrations)
-- [Configuration](#configuration)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [License](#license)
+[English](README.md) · [中文](README_en.md) · [Changelog](CHANGELOG.md)
 
 ---
 
-## Introduction
+## 📋 Introduction
 
 **Porpoise Agent** is an AI Agent framework for Yangtze finless porpoise (*Neophocaena asiaeorientalis asiaeorientalis*) research, built on a **Multi-Agent System (MAS)** with a **BDI cognitive architecture**. It automates literature search, acoustic analysis, ecological modeling, and conservation assessment workflows.
 
-### Capabilities
+### 🚀 Capabilities
 
-| Capability | Description |
-|------------|-------------|
+| 🚀 Capability | 📝 Description |
+|:--------------|:---------------|
 | 🧠 **Multi-Agent System** | 7 specialized agents collaborating: Literature, Acoustic, Ecology, Conservation, Critic, Orchestrator |
 | 🔍 **BDI Decision Engine** | Belief-Desire-Intention state machine for reasoning and action planning |
 | 📚 **Three-Tier Memory** | Short-term (context window) + Long-term (ChromaDB vector store / RAG) |
@@ -51,9 +34,9 @@
 
 ---
 
-## Quick Start
+## ⚡ Quick Start
 
-### Installation
+### 📦 Installation
 
 ```bash
 git clone https://github.com/FFRC-LiuKai-Lab/porpoise-agent.git
@@ -61,7 +44,7 @@ cd porpoise-agent
 pip install -e .
 ```
 
-### Verify Installation
+### ✅ Verify Installation
 
 ```python
 from porpoise_agent.src.agents import OrchestratorAgent
@@ -70,7 +53,7 @@ orch = OrchestratorAgent()
 print(f"Agents registered: {len(orch.list_agents())}")
 ```
 
-### CLI Usage
+### 🎮 CLI Usage
 
 ```bash
 porpoise doctor         # Health check
@@ -81,9 +64,9 @@ porpoise run TASK       # Run a single research task
 
 ---
 
-## Core Features
+## 🚀 Core Features
 
-### 1. Multi-Agent System
+### 1️⃣ Multi-Agent System
 
 ```python
 from porpoise_agent.src.agents import (
@@ -101,7 +84,7 @@ orch.register_agent(CriticAgent())
 result = orch.run("Analyze porpoise population status")
 ```
 
-### 2. BDI Decision Making
+### 2️⃣ BDI Decision Making
 
 ```python
 from porpoise_agent.src.cognitive import BDICoordinator, Belief, Desire
@@ -114,7 +97,7 @@ bdi.add_desire(Desire("assess_threat", priority=0.9,
 plan = bdi.deliberate()
 ```
 
-### 3. Memory System
+### 3️⃣ Memory System
 
 ```python
 from porpoise_agent.src.memory import MemoryManager
@@ -125,7 +108,7 @@ memory.ltm.store_document("paper_001", "Acoustic analysis of finless porpoise")
 results = memory.ltm.search("acoustic", top_k=5)
 ```
 
-### 4. Sandbox Execution
+### 4️⃣ Sandbox Execution
 
 ```python
 from porpoise_agent.src.execution import execute_safe
@@ -136,10 +119,10 @@ print(result.output)
 
 ---
 
-## CLI Commands
+## 🎮 CLI Commands
 
-| Command | Description | Example |
-|---------|-------------|---------|
+| 🎮 Command | 📝 Description | 💡 Example |
+|:-----------|:---------------|:-----------|
 | `porpoise chat` | Interactive chat (ReAct loop) | `porpoise chat --model deepseek-reasoner` |
 | `porpoise run TASK` | Single research task | `porpoise run "Analyze acoustic data"` |
 | `porpoise topology` | Show MAS topology | `porpoise topology` |
@@ -147,12 +130,12 @@ print(result.output)
 
 ---
 
-## API Reference
+## 📚 API Reference
 
 ### `porpoise_agent.src.agents`
 
-| Class | Description |
-|-------|-------------|
+| 🏗️ Class | 📝 Description |
+|:----------|:---------------|
 | `OrchestratorAgent` | Central scheduler: NLU → route → multi-agent dispatch → aggregate |
 | `LiteratureAgent` | Literature search via cognitive-search-engine |
 | `AcousticAgent` | NBHF echolocation signal analysis |
@@ -163,8 +146,8 @@ print(result.output)
 
 ### `porpoise_agent.src.cognitive`
 
-| Class | Description |
-|-------|-------------|
+| 🏗️ Class | 📝 Description |
+|:----------|:---------------|
 | `BDICoordinator` | BDI state machine |
 | `ReActLoop` | Reasoning-Acting cycle |
 | `TaskDecomposer` | CoT / ToT / GoT decomposition strategies |
@@ -172,8 +155,8 @@ print(result.output)
 
 ### `porpoise_agent.src.execution`
 
-| Class/Function | Description |
-|----------------|-------------|
+| 🏗️ Class/Function | 📝 Description |
+|:-------------------|:---------------|
 | `SandboxExecutor` | Isolated Python code execution |
 | `ToolRegistry` | Tool registration and discovery |
 | `APIClient` | PubMed / CrossRef / Semantic Scholar client |
@@ -181,7 +164,7 @@ print(result.output)
 
 ---
 
-## Architecture
+## 📁 Architecture
 
 ```
 porpoise-agent/
@@ -209,10 +192,10 @@ porpoise-agent/
 └── scripts/                     ← Utility scripts
 ```
 
-### Module Responsibilities
+### 🧩 Module Responsibilities
 
-| Module | Responsibility | Key Classes |
-|--------|---------------|-------------|
+| 🧩 Module | 🎯 Responsibility | 🏗️ Key Classes |
+|:----------|:------------------|:---------------|
 | `agents/` | Multi-Agent collaboration | `OrchestratorAgent`, `LiteratureAgent`, `AcousticAgent` |
 | `cognitive/` | BDI reasoning + ReAct loop | `BDICoordinator`, `ReActLoop`, `TaskDecomposer` |
 | `memory/` | Context + vector retrieval | `MemoryManager`, `ShortTermMemory`, `LongTermMemory` |
@@ -223,10 +206,10 @@ porpoise-agent/
 
 ---
 
-## External Integrations
+## 🔌 External Integrations
 
-| System | Adapter | Purpose |
-|--------|---------|---------|
+| 🖥️ System | 🔗 Adapter | 🎯 Purpose |
+|:----------|:-----------|:-----------|
 | **cognitive-search-engine** | `CognitiveSearchAdapter` | Multi-engine literature search |
 | **Neo4j Knowledge Graph** | `KnowledgeGraph` | Species relationship storage |
 | **Zotero** | `ZoteroAdapter` | Research library access |
@@ -234,7 +217,7 @@ porpoise-agent/
 
 ---
 
-## Configuration
+## ⚙️ Configuration
 
 ### `config/agent.yaml`
 Runtime configuration for all 5 layers (model selection, tool permissions, agent parameters).
@@ -256,10 +239,10 @@ MCP tool service registration (scholar search, article full-text, filesystem, et
 
 ---
 
-## Related Projects
+## 🔗 Related Projects
 
-| Project | Role | Relationship |
-|---------|------|--------------|
+| 🏗️ Project | 🎯 Role | 🔗 Relationship |
+|:-----------|:--------|:----------------|
 | **eon-core** | Coordinator | Vertex V2 — porpoise domain agent |
 | **fish-ecology-assistant** | Knowledge V0 | Species knowledge base |
 | **cognitive-search-engine** | Search V1 | Literature search and scoring |
@@ -268,7 +251,7 @@ MCP tool service registration (scholar search, article full-text, filesystem, et
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork this repository
 2. Create a feature branch: `git checkout -b feature/xxx`
@@ -276,7 +259,7 @@ MCP tool service registration (scholar search, article full-text, filesystem, et
 4. Push branch: `git push origin feature/xxx`
 5. Create a Pull Request
 
-### Running Tests
+### 🧪 Running Tests
 
 ```bash
 cd porpoise-agent
@@ -285,10 +268,18 @@ python -m pytest tests/ -v
 
 ---
 
-## License
+## 📜 License
 
 MIT License © 2026 Liu Kai Research Group, FFRC
 
 ---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+> 🌊 Everything Flows · Panta Rhei
+>
+> 🏛️ Heraclitus said: No man ever steps in the same river twice.
+>
+> 💻 We say: You can't analyze today's porpoise data with last month's code.
+>
+> **📅 Last updated: 2026-06-21 · 🖥️ Environment: Reasonix Code · ⚡ Powered by DeepSeek**
+
+[⬆ Back to top](#)

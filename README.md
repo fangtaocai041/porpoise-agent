@@ -1,6 +1,6 @@
 ﻿# 🐬 Porpoise Agent
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-v0.2-blueviolet?style=for-the-badge) ![Agents](https://img.shields.io/badge/Agents-7-MAS-success?style=for-the-badge) ![Arch](https://img.shields.io/badge/Arch-5-Layer-important?style=for-the-badge) ![BDI](https://img.shields.io/badge/BDI-ReAct-critical?style=for-the-badge) ![GoT](https://img.shields.io/badge/GoT-MCTS-informational?style=for-the-badge) ![SSE](https://img.shields.io/badge/SSE-Streaming-ff69b4?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-orange?style=for-the-badge) ![StateGraph](https://img.shields.io/badge/StateGraph-LangGraph-red?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-v0.2-blueviolet?style=for-the-badge) ![Agents](https://img.shields.io/badge/Agents-7-MAS-success?style=for-the-badge) ![Arch](https://img.shields.io/badge/Arch-5-Layer-important?style=for-the-badge) ![BDI](https://img.shields.io/badge/BDI-ReAct-critical?style=for-the-badge) ![GoT](https://img.shields.io/badge/GoT-MCTS-informational?style=for-the-badge) ![SSE](https://img.shields.io/badge/SSE-Stream-ff69b4?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-orange?style=for-the-badge) ![StateGraph](https://img.shields.io/badge/StateGraph-topo-red?style=for-the-badge)
 
 > 🎯 Porpoise Domain Expert Engine — 5-layer cognitive architecture with BDI+ReAct+Reflexion, 7-agent MAS, and frontier techniques.
 > A porpoise knows the river — an agent knows the domain.
@@ -90,17 +90,18 @@ porpoise-agent/
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🧠 BDI+ReAct+Reflexion | Formal cognitive loop with MDP correspondence |
-| 🌳 CoT/ToT/GoT/MCTS | Multiple task decomposition and search strategies |
-| 🕸️ StateGraph | LangGraph-inspired conditional edge routing |
-| 🔴 SSE Streaming | Real-time agent output via Server-Sent Events |
-| 🗄️ ChromaDB RAG | Vector-backed long-term memory with graceful degradation |
-| 🔧 7-Agent MAS | Literature, Acoustic, Ecology, Conservation, Critic... |
-| 🔀 6 Topology Types | Sequential, Hierarchical, Star, Debate, DAG, Dynamic |
-| 🔒 Subprocess Sandbox | Safe code execution with import whitelist |
-| 📚 4 Integrations | cognitive-search, Zotero, Obsidian, Neo4j/KnowledgeGraph |
+| Feature | Status | Description |
+|---------|:------:|-------------|
+| 🧠 BDI+ReAct+Reflexion | ✅ | Full cognitive loop with MDP |
+| 🌳 CoT/ToT/GoT/MCTS | ✅ | 4 decomposition + 5 search strategies |
+| 🕸️ StateGraph | ✅ | LangGraph-style conditional routing |
+| 🔴 SSE Streaming | ✅ | Real-time agent output |
+| 🗄️ ChromaDB RAG | ✅ | Vector LTM with graceful degradation |
+| 🔧 7-Agent MAS | ✅ | 6 topology types + condition edges |
+| 🔒 Subprocess Sandbox | ✅ | Import whitelist + resource limits |
+| 📚 4 Integrations | ✅ | cognitive-search, Zotero, Obsidian, KG |
+| ⚠️ Acoustic/Ecology | 🟡 | Framework ready, core methods stub |
+| 🐬 Domain Focus | ✅ | Yangtze finless porpoise research |
 
 ---
 

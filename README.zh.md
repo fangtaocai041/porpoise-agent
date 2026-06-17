@@ -1,6 +1,6 @@
 ﻿# 🐬 江豚智能体
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge) ![协议](https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-MIT-brightgreen?style=for-the-badge) ![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-v0.2-blueviolet?style=for-the-badge) ![智能体](https://img.shields.io/badge/%E6%99%BA%E8%83%BD%E4%BD%93-7%E4%BD%93-success?style=for-the-badge) ![架构](https://img.shields.io/badge/%E6%9E%B6%E6%9E%84-%E4%BA%94%E5%B1%82-important?style=for-the-badge) ![BDI](https://img.shields.io/badge/BDI-ReAct-critical?style=for-the-badge) ![GoT](https://img.shields.io/badge/GoT-MCTS-informational?style=for-the-badge) ![SSE](https://img.shields.io/badge/SSE-%E6%B5%81%E5%BC%8F-ff69b4?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-orange?style=for-the-badge) ![StateGraph](https://img.shields.io/badge/StateGraph-LangGraph-red?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge) ![协议](https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-MIT-brightgreen?style=for-the-badge) ![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-v0.2-blueviolet?style=for-the-badge) ![智能体](https://img.shields.io/badge/%E6%99%BA%E8%83%BD%E4%BD%93-7%E4%BD%93-success?style=for-the-badge) ![架构](https://img.shields.io/badge/%E6%9E%B6%E6%9E%84-5%E5%B1%82-important?style=for-the-badge) ![BDI](https://img.shields.io/badge/BDI-ReAct-critical?style=for-the-badge) ![GoT](https://img.shields.io/badge/GoT-MCTS-informational?style=for-the-badge) ![SSE](https://img.shields.io/badge/SSE-%E6%B5%81%E5%BC%8F-ff69b4?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-orange?style=for-the-badge) ![拓扑](https://img.shields.io/badge/%E6%8B%93%E6%89%91-6%E5%9E%8B-red?style=for-the-badge)
 
 > 🎯 江豚领域专家引擎 — 5层认知架构，BDI+ReAct+Reflexion，7智能体MAS，前沿技术。
 🎯 江豚领域专家引擎 — 五层认知架构，BDI+ReAct+Reflexion，七智能体。
@@ -86,17 +86,18 @@ porpoise-agent/
 
 ## ✨ 功能特性
 
-| 功能 | 说明 |
-|------|------|
-| 🧠 BDI+ReAct+Reflexion | 形式化认知循环 (MDP对应) |
-| 🌳 CoT/ToT/GoT/MCTS | 多种任务分解和搜索策略 |
-| 🕸️ StateGraph | LangGraph风格条件边路由 |
-| 🔴 SSE 流式 | 实时智能体输出 |
-| 🗄️ ChromaDB RAG | 向量长期记忆+优雅降级 |
-| 🔧 7-Agent MAS | 文献/声学/生态/保护/批判... |
-| 🔀 6种拓扑类型 | 顺序/层级/星形/辩论/DAG/动态 |
-| 🔒 子进程沙盒 | 安全代码执行 |
-| 📚 4项集成 | cognitive-search, Zotero, Obsidian, Neo4j |
+| 功能 | 状态 | 说明 |
+|------|:--:|------|
+| 🧠 BDI+ReAct+Reflexion | ✅ | 完整 MDP 认知循环 |
+| 🌳 CoT/ToT/GoT/MCTS | ✅ | 4 分解 + 5 搜索策略 |
+| 🕸️ StateGraph | ✅ | LangGraph 风格条件路由 |
+| 🔴 SSE 流式 | ✅ | 实时智能体输出 |
+| 🗄️ ChromaDB RAG | ✅ | 向量长期记忆 + 优雅降级 |
+| 🔧 7 体 MAS | ✅ | 6 种拓扑 + 条件边 |
+| 🔒 子进程沙盒 | ✅ | 导入白名单 + 资源限制 |
+| 📚 4 项集成 | ✅ | cognitive-search, Zotero, Obsidian, KG |
+| ⚠️ 声学/生态 Agent | 🟡 | 框架就绪，核心方法存根 |
+| 🐬 领域聚焦 | ✅ | 长江江豚研究 |
 
 ---
 

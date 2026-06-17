@@ -107,8 +107,10 @@ porpoise-agent/
 | 🔧 7-Agent MAS | ✅ | 6 topology types + condition edges |
 | 🔒 Subprocess Sandbox | ✅ | Import whitelist + resource limits |
 | 📚 4 Integrations | ✅ | cognitive-search, Zotero, Obsidian, KG |
+| 📦 7 Optional Deps | ✅ | acoustics/spatial/knowledge/ml/all/dev/gpu — 按需安装 |
 | ⚠️ Acoustic/Ecology | 🟡 | Framework ready, core methods stub |
 | 🐬 Domain Focus | ✅ | Yangtze finless porpoise research |
+| 🧪 Test Suite | ✅ | 185/185 passing (35 fixes applied) |
 
 ---
 

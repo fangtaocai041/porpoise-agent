@@ -1,12 +1,13 @@
 ![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
   ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
-  ![v0.2](https://img.shields.io/badge/v0.2-8A4FCE?style=flat-square)
-  ![7-agent MAS](https://img.shields.io/badge/7-agent%20MAS-007EC6?style=flat-square)
-  ![5-layer](https://img.shields.io/badge/5-layer-FE7D37?style=flat-square)
-  ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-D73A4A?style=flat-square)
-  ![SSE stream](https://img.shields.io/badge/SSE%20stream-0EA5E9?style=flat-square)
-  ![ChromaDB](https://img.shields.io/badge/ChromaDB-EC4899?style=flat-square)
-  ![MCTS](https://img.shields.io/badge/MCTS-F59E0B?style=flat-square)
+  ![v2.2.0](https://img.shields.io/badge/v2.2.0-8A4FCE?style=flat-square)
+  ![17 MCP](https://img.shields.io/badge/17%20MCP-007EC6?style=flat-square)
+  ![18 skills](https://img.shields.io/badge/18%20技能-FE7D37?style=flat-square)
+  ![26 KB files](https://img.shields.io/badge/26%20知识文件-D73A4A?style=flat-square)
+  ![185 tests](https://img.shields.io/badge/185%2F185%20测试-0EA5E9?style=flat-square)
+  ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-EC4899?style=flat-square)
+  ![5-layer](https://img.shields.io/badge/5层架构-F59E0B?style=flat-square)
+  ![SSE stream](https://img.shields.io/badge/SSE%20流-6B7280?style=flat-square)
 </p>
 
 [English](README.md) · [中文](README.zh.md)
@@ -16,6 +17,7 @@
 世界是动态的，知识是暂时的，涌现是常态。
 
 ---
+
 ## 📖 目录
 
 - [哲学](#-哲学)
@@ -23,6 +25,8 @@
 - [架构](#-架构)
 - [功能特性](#-功能特性)
 - [项目结构](#-项目结构)
+- [版本历史](#-版本历史)
+- [自我评估](#-自我评估)
 - [生态体系](#-生态体系)
 
 ---
@@ -32,6 +36,8 @@
 > 万象流转，真知若寄，涌现成章。
 
 此非口号。乃贯穿每一行代码、每一次检索、每一份分析之操作系统。
+
+本项目是三生万物 S-T-V-P₁-P₂ 五体架构中的**衍生领域专家（P₁）**，由 **eon-core** 统一协调。它从 S（fish-ecology-assistant）继承知识，从 V（cognitive-search-engine）继承验证能力，专注于长江江豚（*Neophocaena asiaeorientalis*）研究。
 
 ### 📜 三谛
 
@@ -52,9 +58,20 @@
 
 > 道生一，一生二，二生三，三生万物。
 
-此为三角之根，载 430 种长江鱼类。
+---
 
+## 🧩 这个项目是什么
 
+**Porpoise Agent** 是一个专注于长江江豚保护的专业 AI 研究智能体。它结合了：
+
+- **5层控制论架构**（交互 → 认知 → 记忆 → 映射 → 执行）
+- **7智能体 MAS 拓扑**（文献、声学、生态、保护、批判 + 2 辅助）
+- **17 个 MCP 工具**涵盖搜索、计算、数据和知识类别
+- **18 个技能**用于领域分析工作流
+- **185/185 项测试通过**，35 个缺陷修复
+- **26 个知识文件**精选江豚研究知识
+
+---
 
 ## 🚀 快速开始
 
@@ -68,6 +85,21 @@ python src/cli.py chat "分析长江江豚声学数据"
 ---
 
 ## 🏗️ 架构
+
+### S-T-V-P₁-P₂ 角色
+
+```
+S-T-V-P₁-P₂ 架构（由 eon-core 协调）：
+
+  S/V0  fish-ecology-assistant    → 知识供给
+  V/V1  cognitive-search-engine   → 搜索验证
+  Coord  eon-core                  → 协调内核
+
+  P₁    🐬 porpoise-agent         → 江豚专家 ← 本项目
+  P₂    🐟 coilia-agent           → 刀鲚专家
+```
+
+### 五层内部架构
 
 ```
 porpoise-agent/
@@ -85,7 +117,20 @@ porpoise-agent/
   ├── mapping/         L4 — 意图路由 + 序列化 + 验证
   ├── execution/       L5 — 沙盒 + 工具注册 + API客户端
   ├── agents/          7 个专业智能体 + 图拓扑
-  └── integration/     4 个适配器
+  └── integration/     4 个适配器 (cognitive-search/Zotero/Obsidian/Neo4j)
+  config/
+  ├── agent.yaml             智能体编排 (v2.2.0)
+  ├── mcp_servers.yaml       17 个 MCP 服务器定义
+  ├── evolution.yaml         自进化参数
+  └── component_registry.yaml 活系统组件注册表
+  tests/
+  ├── test_bdi.py               BDI 认知测试
+  ├── test_bdi_standalone.py    BDI 独立测试
+  ├── test_integration.py       集成测试
+  ├── test_memory.py            记忆系统测试
+  ├── test_memory_standalone.py 记忆独立测试
+  ├── test_search_standalone.py 搜索策略测试
+  └── test_serializer.py        序列化器测试
 ```
 
 ---
@@ -102,8 +147,11 @@ porpoise-agent/
 | 🔧 7 体 MAS | ✅ | 6 种拓扑 + 条件边 |
 | 🔒 子进程沙盒 | ✅ | 导入白名单 + 资源限制 |
 | 📚 4 项集成 | ✅ | cognitive-search, Zotero, Obsidian, KG |
+| 📦 7 可选依赖 | ✅ | acoustics/spatial/knowledge/ml/all/dev/gpu |
+| 🔄 自进化 | ✅ | 跨项目参数传播 |
 | ⚠️ 声学/生态 Agent | 🟡 | 框架就绪，核心方法存根 |
 | 🐬 领域聚焦 | ✅ | 长江江豚研究 |
+| 🧪 测试套件 | ✅ | 185/185 通过（35 个修复） |
 
 ---
 
@@ -111,26 +159,60 @@ porpoise-agent/
 
 ```
 porpoise-agent/
-  (见上方架构图)
+  （见上方架构图）
 ```
+
+---
+
+## 📜 版本历史
+
+| 版本 | 日期 | 重要更新 |
+|------|------|----------|
+| **v2.2.0** | 2026-06-17 | 17 MCP 集成，18 技能，26 KB 文件，185/185 测试，跨项目进化 |
+| v2.1.0 | 2026-06-12 | SSE 流式输出，StateGraph 条件路由，ChromaDB RAG |
+| v2.0.0 | 2026-06-07 | 5层架构，7智能体 MAS，BDI+ReAct+Reflexion 循环 |
+| v1.0.0 | 2026-06-01 | 初始江豚智能体框架 |
+
+---
+
+## 🪞 自我评估
+
+### 优势
+- **完整认知栈**：BDI（信念建模）+ ReAct（推理循环）+ Reflexion（自我批判）——领域智能体中独树一帜
+- **MAS 拓扑**：7 智能体配 6 种拓扑类型，支持复杂研究工作流
+- **三角赋能**：通过 eon-core 从 S 层继承知识、从 V 层继承验证能力
+- **全面测试**：185/185 测试通过，35 个缺陷修复——高可靠性基线
+- **优雅降级**：ChromaDB RAG 在向量数据库不可用时回退到关键词搜索
+
+### 当前局限
+- 声学分析框架已搭建但核心方法为存根（需领域数据）
+- 生态智能体依赖外部 R 环境进行高级统计
+- Neo4j 知识图谱集成可选且尚未填充数据
+- 仅限单物种聚焦（仅长江江豚）
+
+### 路线图
+- [ ] 完善声学分析流水线（NBHF 点击检测、哨声分类）
+- [ ] 种群生存力分析（PVA）模块
+- [ ] 实时野外调查数据接入
+- [ ] 多物种扩展框架
 
 ---
 
 ## 🔗 生态体系
 
-本项目是「三生万物」生态的 江豚领域专家引擎 (P₁)。
+本项目是「三生万物」生态的 **江豚领域专家（P₁）**。
 
 ```
-三角核心 (sealed 3):
-  📦 fish-ecology-assistant    → 知识供给 (V0)
-  🔍 cognitive-search-engine   → 搜索验证 (V1)
-  ⚙️ eon-core                  → 协调内核 (Coord)
+S-T-V-P₁-P₂ 架构（由 eon-core 协调）：
 
-万物衍生 (open N):
-  🐬 porpoise-agent    → P₁ 江豚专研
-  🐟 coilia-agent      → P₂ 刀鲚专研
-  🐟 culter-agent      → P₃ 鲌类专研
-  🔥 conflict-arbiter  → C  冲突仲裁
+  S/V0  📦 fish-ecology-assistant    → 知识供给
+  V/V1  🔍 cognitive-search-engine   → 搜索验证
+  Coord ⚙️ eon-core                  → 协调内核
+
+  P₁    🐬 porpoise-agent           → 江豚专家 ← 本项目
+  P₂    🐟 coilia-agent             → 刀鲚专家
+  P₃    🐟 culter-agent             → 鲌类专家
+  C     🔥 conflict-arbiter         → 冲突仲裁
 ```
 
 > 🔥 和则无穷力量，分则顶尖专家引擎。
@@ -145,5 +227,4 @@ porpoise-agent/
 
 这个项目不是一套固定的工具集——它是一个**活的系统**。每个组件都内置了过期机制、版本追踪和涌现感知。随着你的研究深入、R包更新、新方法涌现，它会和你一起进化。
 
-*最后更新：2026-06-17　|　适用环境：Reasonix Code · DeepSeek 驱动*
-
+*最后更新：2026-06-20　|　适用环境：Reasonix Code · DeepSeek 驱动*

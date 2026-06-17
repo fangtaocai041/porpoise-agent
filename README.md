@@ -1,52 +1,73 @@
-﻿![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
-  ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
-  ![v2.2.0](https://img.shields.io/badge/v2.2.0-8A4FCE?style=flat-square)
-  ![17 MCP](https://img.shields.io/badge/17%20MCP-007EC6?style=flat-square)
-  ![18 skills](https://img.shields.io/badge/18%20skills-FE7D37?style=flat-square)
-  ![26 KB files](https://img.shields.io/badge/26%20KB%20files-D73A4A?style=flat-square)
-  ![185 tests](https://img.shields.io/badge/185%2F185%20tests-0EA5E9?style=flat-square)
-  ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-EC4899?style=flat-square)
-  ![5-layer](https://img.shields.io/badge/5-layer-F59E0B?style=flat-square)
-  ![SSE stream](https://img.shields.io/badge/SSE%20stream-6B7280?style=flat-square)
-  [![DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/fangtaocai041/porpoise-agent)
+﻿<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║   🐬  PORPOISE AGENT  ·  P₁ Domain Expert  ·  v2.2.0        ║
+║  ─────────────────────────────────────────────────────────  ║
+║    NBHF Acoustics · Habitat Modeling · Population Viability  ║
+║      Yangtze Finless Porpoise · Neophocaena asiaeorientalis  ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+<p align="center">
+  🇨🇳 <a href="README.zh.md">中文</a>  ·  🇬🇧 <a href="README.md">English</a>
 </p>
 
-[English](README.md) · [中文](README.zh.md)
+![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
+![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
+![v2.2.0](https://img.shields.io/badge/v2.2.0-8A4FCE?style=flat-square)
+![17 MCP](https://img.shields.io/badge/17%20MCP-007EC6?style=flat-square)
+![18 skills](https://img.shields.io/badge/18%20skills-FE7D37?style=flat-square)
+![26 KB files](https://img.shields.io/badge/26%20KB%20files-D73A4A?style=flat-square)
+![185 tests](https://img.shields.io/badge/185%2F185%20tests-0EA5E9?style=flat-square)
+![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-EC4899?style=flat-square)
+![5-layer](https://img.shields.io/badge/5-layer-F59E0B?style=flat-square)
+![SSE stream](https://img.shields.io/badge/SSE%20stream-6B7280?style=flat-square)
+[![DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/fangtaocai041/porpoise-agent)
+
+<p align="center">
+  <a href="https://github.com/fangtaocai041/porpoise-agent/stargazers"><img src="https://img.shields.io/github/stars/fangtaocai041/porpoise-agent?style=social" alt="Stars"></a>
+  <a href="https://github.com/fangtaocai041/porpoise-agent/network/members"><img src="https://img.shields.io/github/forks/fangtaocai041/porpoise-agent?style=social" alt="Forks"></a>
+</p>
 
 <div align="center"><h3>🌊 Everything flows.</h3></div>
 
 The world is dynamic, knowledge is temporary, emergence is the norm.
 
----
-
-## 📖 Table of Contents
-
-- [Philosophy](#-philosophy)
-- [Quick Start](#-quick-start)
-- [Architecture](#-architecture)
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Version History](#-version-history)
-- [Self-Assessment](#-self-assessment)
-- [Ecosystem](#-ecosystem)
+</div>
 
 ---
 
-## 🏛?Philosophy
+## 📑 Table of Contents
+
+- [🏛️ Philosophy](#-philosophy)
+- [🧩 What This Is](#-what-this-is)
+- [🚀 Quick Start](#-quick-start)
+- [🏗️ Architecture](#-architecture)
+- [✨ Features](#-features)
+- [📁 Project Structure](#-project-structure)
+- [📜 Version History](#-version-history)
+- [🪞 Self-Assessment](#-self-assessment)
+- [🔗 Ecosystem](#-ecosystem)
+- [📋 README Changelog](#-readme-changelog)
+
+---
+
+## 🏛️ Philosophy
 
 > The river flows, knowledge drifts, emergence patterns.
 
 This is not a slogan. It is the operating system running through every line of code, every search, every analysis.
 
-This project is a **Derived Domain Expert (P?** in the SanShengWanWu Triangle Core + Derived architecture, coordinated by **eon-core**. It inherits knowledge from S/V0 (fish-ecology-assistant) and verification from V/V1 (cognitive-search-engine), then specializes in Yangtze finless porpoise (*Neophocaena asiaeorientalis*) research.
+This project is a **Derived Domain Expert (P₁)** in the SanShengWanWu Triangle Core + Derived architecture, coordinated by **eon-core**. It inherits knowledge from S/V0 (fish-ecology-assistant) and verification from V/V1 (cognitive-search-engine), then specializes in Yangtze finless porpoise (*Neophocaena asiaeorientalis*) research.
 
 ### 📜 Three Tenets
 
-**🌊 The River Flows** ?Packages update, species migrate, consensus shifts, climate reshapes. Today's certainty is tomorrow's footnote. We place knowledge on a timeline and view it dynamically.
+**🌊 The River Flows** — Packages update, species migrate, consensus shifts, climate reshapes. Today's certainty is tomorrow's footnote. We place knowledge on a timeline and view it dynamically.
 
-**🍂 Knowledge Drifts** ?The foundation of science is falsifiability (Popper). No discovery is final ?only the best current explanation. We speak in calibrated language: evidence suggests, not proves.
+**🍂 Knowledge Drifts** — The foundation of science is falsifiability (Popper). No discovery is final — only the best current explanation. We speak in calibrated language: evidence suggests, not proves.
 
-**🌟 Emergence Patterns** ?Life, consciousness, ecosystems, AI reasoning ?all emergent. When three or more independent sources converge on the same unexpected pattern, the system flags emergence ?never dismisses it as noise.
+**🌟 Emergence Patterns** — Life, consciousness, ecosystems, AI reasoning — all emergent. When three or more independent sources converge on the same unexpected pattern, the system flags emergence — never dismisses it as noise.
 
 ### ⚖ Why This Matters
 
@@ -57,8 +78,10 @@ This project is a **Derived Domain Expert (P?** in the SanShengWanWu Triangle Co
 | Knowledge Decay | Handbook frozen | Review records include next review date |
 | Method | Fixed pipeline | Dynamic selection, dynamic confidence |
 
-> 道生一，一生二，二生三，三生万物?
-From One comes Two, from Two comes Three, from Three come all things.
+> 道生一，一生二，二生三，三生万物。
+> From One comes Two, from Two comes Three, from Three come all things.
+
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
 
 ---
 
@@ -66,12 +89,14 @@ From One comes Two, from Two comes Three, from Three come all things.
 
 **Porpoise Agent** is a specialized AI research agent for Yangtze finless porpoise conservation. It combines:
 
-- **5-layer cybernetic architecture** (Interaction ?Cognitive ?Memory ?Mapping ?Execution)
+- **5-layer cybernetic architecture** (Interaction → Cognitive → Memory → Mapping → Execution)
 - **7-agent MAS topology** (Literature, Acoustic, Ecology, Conservation, Critic, +2 support)
 - **17 MCP tools** across search, compute, data, and knowledge categories
 - **18 skills** for domain-specific analysis workflows
 - **185/185 tests passing** with 35 bug fixes applied
 - **26 KB files** of curated porpoise research knowledge
+
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
 
 ---
 
@@ -89,42 +114,46 @@ pip install -e .
 python src/cli.py chat "Analyze finless porpoise acoustic data"
 ```
 
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
+
 ---
 
-## 🏗?Architecture
+## 🏗️ Architecture
 
 ### Triangle Core + Derived Role
 
 ```
 Triangle Core + Derived Architecture (coordinated by eon-core):
 
-  S/V0  fish-ecology-assistant    ?Knowledge Supply
-  V/V1  cognitive-search-engine   ?Search Verification
-  Coord  eon-core                  ?Coordination Hub
+  S/V0  fish-ecology-assistant    → Knowledge Supply
+  V/V1  cognitive-search-engine   → Search Verification
+  Coord  eon-core                  → Coordination Hub
 
-  P?   🐬 porpoise-agent         ?Porpoise Expert ?this project
-  P?   🐟 coilia-agent           ?Coilia Expert
-  P?   🐟 culter-agent           ?Culter Expert
-  C     🔥 conflict-arbiter       ?Conflict Arbitration
+  P₁   🐬 porpoise-agent         → Porpoise Expert — this project
+  P₂   🐟 coilia-agent           → Coilia Expert
+  P₃   🐟 culter-agent           → Culter Expert
+  C     🔥 conflict-arbiter       → Conflict Arbitration
 ```
 
 ### 5-Layer Internal Architecture
 
+<details open><summary><b>📂 Internal File Tree</b></summary>
+
 ```
 porpoise-agent/
   src/
-  ├── interaction/     L1 ?NLU intent parser + Markdown renderer
-  ?  └── sse_emitter.py   SSE streaming output
+  ├── interaction/     L1 → NLU intent parser + Markdown renderer
+  │   └── sse_emitter.py   SSE streaming output
   ├── cognitive/       L2  — BDI + ReAct + Reflexion + Decomposer (CoT/ToT/GoT)
-  ?  ├── bdi.py            Formal BDI with MDP correspondence
-  ?  ├── react_loop.py     Think→Act→Observe→Reflect engine
-  ?  ├── reflexion.py      Credit assignment + self-critique
-  ?  ├── decomposer.py     CoT/ToT/GoT task decomposition
-  ?  ├── search.py         BFS/DFS/Beam/MCTS thought-space search
-  ?  └── stategraph.py     LangGraph-inspired StateGraph topology
-  ├── memory/          L3 ?STM + LTM (ChromaDB RAG)
-  ├── mapping/         L4 ?IntentRouter + Serializer + Validator
-  ├── execution/       L5 ?Sandbox + ToolRegistry + APIClient
+  │   ├── bdi.py            Formal BDI with MDP correspondence
+  │   ├── react_loop.py     Think→Act→Observe→Reflect engine
+  │   ├── reflexion.py      Credit assignment + self-critique
+  │   ├── decomposer.py     CoT/ToT/GoT task decomposition
+  │   ├── search.py         BFS/DFS/Beam/MCTS thought-space search
+  │   └── stategraph.py     LangGraph-inspired StateGraph topology
+  ├── memory/          L3 → STM + LTM (ChromaDB RAG)
+  ├── mapping/         L4 → IntentRouter + Serializer + Validator
+  ├── execution/       L5 → Sandbox + ToolRegistry + APIClient
   ├── agents/          7 specialized agents with graph topology
   └── integration/     4 adapters (cognitive-search/Zotero/Obsidian/Neo4j)
   config/
@@ -142,27 +171,33 @@ porpoise-agent/
   └── test_serializer.py        Serializer tests
 ```
 
+</details>
+
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
+
 ---
 
-## ?Features
+## ✨ Features
+
+<details open><summary><b>📋 Feature List</b></summary>
 
 | Feature | Status | Description |
 |---------|:------:|-------------|
-| 🧠 BDI+ReAct+Reflexion | ?| Full cognitive loop with MDP correspondence |
-| 🌳 CoT/ToT/GoT/MCTS | ?| 4 decomposition + 5 search strategies |
-| 🕸?StateGraph | ?| LangGraph-style conditional routing |
-| 🔴 SSE Streaming | ?| Real-time agent output |
-| 🗄?ChromaDB RAG | ?| Vector LTM with graceful degradation |
-| 🔧 7-Agent MAS | ?| 6 topology types + condition edges |
-| 🔒 Subprocess Sandbox | ?| Import whitelist + resource limits |
-| 📚 4 Integrations | ?| cognitive-search, Zotero, Obsidian, KG |
-| 📦 7 Optional Deps | ?| acoustics/spatial/knowledge/ml/all/dev/gpu |
-| 🔄 Self-Evolution | ?| Cross-project parameter propagation |
+| 🧠 BDI+ReAct+Reflexion | ✅ | Full cognitive loop with MDP correspondence |
+| 🌳 CoT/ToT/GoT/MCTS | ✅ | 4 decomposition + 5 search strategies |
+| 🕸️ StateGraph | ✅ | LangGraph-style conditional routing |
+| 🔴 SSE Streaming | ✅ | Real-time agent output |
+| 🗄️ ChromaDB RAG | ✅ | Vector LTM with graceful degradation |
+| 🔧 7-Agent MAS | ✅ | 6 topology types + condition edges |
+| 🔒 Subprocess Sandbox | ✅ | Import whitelist + resource limits |
+| 📚 4 Integrations | ✅ | cognitive-search, Zotero, Obsidian, KG |
+| 📦 7 Optional Deps | ✅ | acoustics/spatial/knowledge/ml/all/dev/gpu |
+| 🔄 Self-Evolution | ✅ | Cross-project parameter propagation |
 | ⚠ Acoustic/Ecology | 🟡 | Framework ready, core methods stub |
-| 🐬 Domain Focus | ?| Yangtze finless porpoise research |
-| 🧪 Test Suite | ?| 185/185 passing (35 fixes applied) |
+| 🐬 Domain Focus | ✅ | Yangtze finless porpoise research |
+| 🧪 Test Suite | ✅ | 185/185 passing (35 fixes applied) |
 
----
+</details>
 
 ### Research Pipeline (5 Phases)
 
@@ -173,6 +208,8 @@ porpoise-agent/
 | 3 | Field Survey | Route generation + configuration |
 | 4 | Conservation Assessment | Indicator calculation + scenario simulation |
 | 5 | Output Generation | Draft generation + typesetting |
+
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
 
 ---
 
@@ -194,15 +231,17 @@ porpoise-agent/
 | v2.0.0 | 2026-06-07 | 5-layer architecture, 7-agent MAS, BDI+ReAct+Reflexion loop |
 | v1.0.0 | 2026-06-01 | Initial porpoise agent framework |
 
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
+
 ---
 
 ## 🪞 Self-Assessment
 
 ### Strengths
-- **Full cognitive stack**: BDI (belief modeling) + ReAct (reasoning loop) + Reflexion (self-critique) ?unique in domain-specific agents
+- **Full cognitive stack**: BDI (belief modeling) + ReAct (reasoning loop) + Reflexion (self-critique) — unique in domain-specific agents
 - **MAS topology**: 7 agents with 6 topology types, enabling complex research workflows
 - **Triangle-powered**: Inherits knowledge from S-layer and verification from V-layer via eon-core
-- **Comprehensive testing**: 185/185 tests with 35 bug fixes ?high reliability baseline
+- **Comprehensive testing**: 185/185 tests with 35 bug fixes — high reliability baseline
 - **Graceful degradation**: ChromaDB RAG falls back to keyword search when vector DB unavailable
 
 ### Current Limitations
@@ -217,26 +256,30 @@ porpoise-agent/
 - [ ] Real-time field survey data ingestion
 - [ ] Multi-species extension framework
 
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
+
 ---
 
 ## 🔗 Ecosystem
 
-This project is the **Porpoise Domain Expert (P?** in the SanShengWanWu ecosystem.
+This project is the **Porpoise Domain Expert (P₁)** in the SanShengWanWu ecosystem.
 
 ```
 Triangle Core + Derived Architecture (coordinated by eon-core):
 
-  S/V0  📦 fish-ecology-assistant    ?Knowledge Supply
-  V/V1  🔍 cognitive-search-engine   ?Search Verification
-  Coord ⚙ eon-core                  ?Coordination Hub
+  S/V0  📦 fish-ecology-assistant    → Knowledge Supply
+  V/V1  🔍 cognitive-search-engine   → Search Verification
+  Coord ⚙ eon-core                  → Coordination Hub
 
-  P?   🐬 porpoise-agent           ?Porpoise Expert ?this project
-  P?   🐟 coilia-agent             ?Coilia Expert
-  P?   🐟 culter-agent             ?Culter Expert
-  C     🔥 conflict-arbiter         ?Conflict Arbitration
+  P₁   🐬 porpoise-agent           → Porpoise Expert — this project
+  P₂   🐟 coilia-agent             → Coilia Expert
+  P₃   🐟 culter-agent             → Culter Expert
+  C     🔥 conflict-arbiter         → Conflict Arbitration
 ```
 
 > 🔥 Together infinite power, apart top expert engines.
+
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
 
 ---
 
@@ -250,6 +293,8 @@ Triangle Core + Derived Architecture (coordinated by eon-core):
 | v2.0.0 | 2026-06-07 | Architecture | 5-layer architecture, 7-agent MAS, BDI+ReAct+Reflexion loop |
 | v1.0.0 | 2026-06-01 | Foundation | Initial porpoise agent framework |
 
+<p align="right"><a href="#-table-of-contents">↑ Back to top</a></p>
+
 ---
 
 🌱 **Everything Flows · Panta Rhei**
@@ -258,6 +303,20 @@ Triangle Core + Derived Architecture (coordinated by eon-core):
 >
 > We say: You cannot analyze today's ecological data with last month's code.
 
-This project is not a fixed toolset ?it is a **living system**. Every component has built-in expiration mechanisms, version tracking, and emergence awareness. As your research deepens, packages update, and new methods emerge, it evolves with you.
+This project is not a fixed toolset — it is a **living system**. Every component has built-in expiration mechanisms, version tracking, and emergence awareness. As your research deepens, packages update, and new methods emerge, it evolves with you.
 
-*Last updated: 2026-06-18　|　Environment: Reasonix Code · DeepSeek Powered*
+*Last updated: 2026-06-18 | Environment: Reasonix Code · DeepSeek Powered*
+
+---
+
+<div align="center">
+
+### 🏷️ Tech & Topics
+
+`porpoise` `nbhf-acoustics` `habitat-modeling` `population-viability` `bdi-agent` `react-loop` `mas` `chromadb` `sse-streaming` `state-graph` `yangtze` `conservation` `reasonix` `mcp`
+
+<br>
+
+<sub>🐬 Part of the **SanShengWanWu** ecosystem · P₁ Derived Domain Expert · Coordinated by [eon-core](https://github.com/fangtaocai041/eon-core)</sub>
+
+</div>

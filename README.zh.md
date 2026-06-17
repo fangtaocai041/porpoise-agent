@@ -1,6 +1,6 @@
-# 🐬 江豚智能体
+﻿# 🐬 江豚智能体
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=flat-square&logo=python) ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square) ![Version](https://img.shields.io/badge/Version-v0.2.0-blueviolet?style=flat-square) ![Agents](https://img.shields.io/badge/Agents-7-agent%20MAS-success?style=flat-square) ![Architecture](https://img.shields.io/badge/Architecture-5-layer-orange?style=flat-square) ![BDI](https://img.shields.io/badge/BDI-ReAct%2BReflexion-red?style=flat-square) ![GoT](https://img.shields.io/badge/GoT-MCTS-yellow?style=flat-square) ![SSE](https://img.shields.io/badge/SSE-Streaming-9cf?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-ff69b4?style=flat-square) ![StateGraph](https://img.shields.io/badge/StateGraph-LangGraph-important?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-v0.2.0-blueviolet?style=for-the-badge) ![Agents](https://img.shields.io/badge/Agents-7-agent%20MAS-success?style=for-the-badge) ![Architecture](https://img.shields.io/badge/Architecture-5-layer-orange?style=for-the-badge) ![BDI](https://img.shields.io/badge/BDI-ReAct%2BReflexion-red?style=for-the-badge) ![GoT](https://img.shields.io/badge/GoT-MCTS-yellow?style=for-the-badge) ![SSE](https://img.shields.io/badge/SSE-Streaming-9cf?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-ff69b4?style=for-the-badge) ![StateGraph](https://img.shields.io/badge/StateGraph-LangGraph-important?style=for-the-badge)
 
 > 🎯 江豚领域专家引擎 — 5层认知架构，BDI+ReAct+Reflexion，7智能体MAS，前沿技术。
 > 江豚知江河，智能体知领域。

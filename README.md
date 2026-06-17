@@ -32,32 +32,32 @@ The world is dynamic, knowledge is temporary, emergence is the norm.
 
 ---
 
-## 🏛�?Philosophy
+## 🏛?Philosophy
 
 > The river flows, knowledge drifts, emergence patterns.
 
 This is not a slogan. It is the operating system running through every line of code, every search, every analysis.
 
-This project is a **Derived Domain Expert (P�?** in the SanShengWanWu Triangle Core + Derived architecture, coordinated by **eon-core**. It inherits knowledge from S/V0 (fish-ecology-assistant) and verification from V/V1 (cognitive-search-engine), then specializes in Yangtze finless porpoise (*Neophocaena asiaeorientalis*) research.
+This project is a **Derived Domain Expert (P?** in the SanShengWanWu Triangle Core + Derived architecture, coordinated by **eon-core**. It inherits knowledge from S/V0 (fish-ecology-assistant) and verification from V/V1 (cognitive-search-engine), then specializes in Yangtze finless porpoise (*Neophocaena asiaeorientalis*) research.
 
 ### 📜 Three Tenets
 
-**🌊 The River Flows** �?Packages update, species migrate, consensus shifts, climate reshapes. Today's certainty is tomorrow's footnote. We place knowledge on a timeline and view it dynamically.
+**🌊 The River Flows** ?Packages update, species migrate, consensus shifts, climate reshapes. Today's certainty is tomorrow's footnote. We place knowledge on a timeline and view it dynamically.
 
-**🍂 Knowledge Drifts** �?The foundation of science is falsifiability (Popper). No discovery is final �?only the best current explanation. We speak in calibrated language: evidence suggests, not proves.
+**🍂 Knowledge Drifts** ?The foundation of science is falsifiability (Popper). No discovery is final ?only the best current explanation. We speak in calibrated language: evidence suggests, not proves.
 
-**🌟 Emergence Patterns** �?Life, consciousness, ecosystems, AI reasoning �?all emergent. When three or more independent sources converge on the same unexpected pattern, the system flags emergence �?never dismisses it as noise.
+**🌟 Emergence Patterns** ?Life, consciousness, ecosystems, AI reasoning ?all emergent. When three or more independent sources converge on the same unexpected pattern, the system flags emergence ?never dismisses it as noise.
 
-### ⚖️ Why This Matters
+### ⚖ Why This Matters
 
 | Scenario | Traditional | Dynamic Worldview |
 |:---------|:-----------|:-------------------|
 | Citations | Studies prove | Smith (2022) found X; Jones (2024) added Y |
-| Outliers | Dismiss as noise | Three or more sources �?emergence signal |
+| Outliers | Dismiss as noise | Three or more sources ?emergence signal |
 | Knowledge Decay | Handbook frozen | Review records include next review date |
 | Method | Fixed pipeline | Dynamic selection, dynamic confidence |
 
-> 道生一，一生二，二生三，三生万物�?
+> 道生一，一生二，二生三，三生万物?
 From One comes Two, from Two comes Three, from Three come all things.
 
 ---
@@ -66,7 +66,7 @@ From One comes Two, from Two comes Three, from Three come all things.
 
 **Porpoise Agent** is a specialized AI research agent for Yangtze finless porpoise conservation. It combines:
 
-- **5-layer cybernetic architecture** (Interaction �?Cognitive �?Memory �?Mapping �?Execution)
+- **5-layer cybernetic architecture** (Interaction ?Cognitive ?Memory ?Mapping ?Execution)
 - **7-agent MAS topology** (Literature, Acoustic, Ecology, Conservation, Critic, +2 support)
 - **17 MCP tools** across search, compute, data, and knowledge categories
 - **18 skills** for domain-specific analysis workflows
@@ -91,21 +91,21 @@ python src/cli.py chat "Analyze finless porpoise acoustic data"
 
 ---
 
-## 🏗�?Architecture
+## 🏗?Architecture
 
 ### Triangle Core + Derived Role
 
 ```
 Triangle Core + Derived Architecture (coordinated by eon-core):
 
-  S/V0  fish-ecology-assistant    �?Knowledge Supply
-  V/V1  cognitive-search-engine   �?Search Verification
-  Coord  eon-core                  �?Coordination Hub
+  S/V0  fish-ecology-assistant    ?Knowledge Supply
+  V/V1  cognitive-search-engine   ?Search Verification
+  Coord  eon-core                  ?Coordination Hub
 
-  P�?   🐬 porpoise-agent         �?Porpoise Expert �?this project
-  P�?   🐟 coilia-agent           �?Coilia Expert
-  P�?   🐟 culter-agent           �?Culter Expert
-  C     🔥 conflict-arbiter       �?Conflict Arbitration
+  P?   🐬 porpoise-agent         ?Porpoise Expert ?this project
+  P?   🐟 coilia-agent           ?Coilia Expert
+  P?   🐟 culter-agent           ?Culter Expert
+  C     🔥 conflict-arbiter       ?Conflict Arbitration
 ```
 
 ### 5-Layer Internal Architecture
@@ -113,18 +113,18 @@ Triangle Core + Derived Architecture (coordinated by eon-core):
 ```
 porpoise-agent/
   src/
-  ├── interaction/     L1 �?NLU intent parser + Markdown renderer
-  �?  └── sse_emitter.py   SSE streaming output
-  ├── cognitive/       L2 �?BDI + ReAct + Reflexion + Decomposer (CoT/ToT/GoT)
-  �?  ├── bdi.py            Formal BDI with MDP correspondence
-  �?  ├── react_loop.py     Think→Act→Observe→Reflect engine
-  �?  ├── reflexion.py      Credit assignment + self-critique
-  �?  ├── decomposer.py     CoT/ToT/GoT task decomposition
-  �?  ├── search.py         BFS/DFS/Beam/MCTS thought-space search
-  �?  └── stategraph.py     LangGraph-inspired StateGraph topology
-  ├── memory/          L3 �?STM + LTM (ChromaDB RAG)
-  ├── mapping/         L4 �?IntentRouter + Serializer + Validator
-  ├── execution/       L5 �?Sandbox + ToolRegistry + APIClient
+  ├── interaction/     L1 ?NLU intent parser + Markdown renderer
+  ?  └── sse_emitter.py   SSE streaming output
+  ├── cognitive/       L2 ?BDI + ReAct + Reflexion + Decomposer (CoT/ToT/GoT)
+  ?  ├── bdi.py            Formal BDI with MDP correspondence
+  ?  ├── react_loop.py     Think→Act→Observe→Reflect engine
+  ?  ├── reflexion.py      Credit assignment + self-critique
+  ?  ├── decomposer.py     CoT/ToT/GoT task decomposition
+  ?  ├── search.py         BFS/DFS/Beam/MCTS thought-space search
+  ?  └── stategraph.py     LangGraph-inspired StateGraph topology
+  ├── memory/          L3 ?STM + LTM (ChromaDB RAG)
+  ├── mapping/         L4 ?IntentRouter + Serializer + Validator
+  ├── execution/       L5 ?Sandbox + ToolRegistry + APIClient
   ├── agents/          7 specialized agents with graph topology
   └── integration/     4 adapters (cognitive-search/Zotero/Obsidian/Neo4j)
   config/
@@ -144,23 +144,23 @@ porpoise-agent/
 
 ---
 
-## �?Features
+## ?Features
 
 | Feature | Status | Description |
 |---------|:------:|-------------|
-| 🧠 BDI+ReAct+Reflexion | �?| Full cognitive loop with MDP correspondence |
-| 🌳 CoT/ToT/GoT/MCTS | �?| 4 decomposition + 5 search strategies |
-| 🕸�?StateGraph | �?| LangGraph-style conditional routing |
-| 🔴 SSE Streaming | �?| Real-time agent output |
-| 🗄�?ChromaDB RAG | �?| Vector LTM with graceful degradation |
-| 🔧 7-Agent MAS | �?| 6 topology types + condition edges |
-| 🔒 Subprocess Sandbox | �?| Import whitelist + resource limits |
-| 📚 4 Integrations | �?| cognitive-search, Zotero, Obsidian, KG |
-| 📦 7 Optional Deps | �?| acoustics/spatial/knowledge/ml/all/dev/gpu |
-| 🔄 Self-Evolution | �?| Cross-project parameter propagation |
-| ⚠️ Acoustic/Ecology | 🟡 | Framework ready, core methods stub |
-| 🐬 Domain Focus | �?| Yangtze finless porpoise research |
-| 🧪 Test Suite | �?| 185/185 passing (35 fixes applied) |
+| 🧠 BDI+ReAct+Reflexion | ?| Full cognitive loop with MDP correspondence |
+| 🌳 CoT/ToT/GoT/MCTS | ?| 4 decomposition + 5 search strategies |
+| 🕸?StateGraph | ?| LangGraph-style conditional routing |
+| 🔴 SSE Streaming | ?| Real-time agent output |
+| 🗄?ChromaDB RAG | ?| Vector LTM with graceful degradation |
+| 🔧 7-Agent MAS | ?| 6 topology types + condition edges |
+| 🔒 Subprocess Sandbox | ?| Import whitelist + resource limits |
+| 📚 4 Integrations | ?| cognitive-search, Zotero, Obsidian, KG |
+| 📦 7 Optional Deps | ?| acoustics/spatial/knowledge/ml/all/dev/gpu |
+| 🔄 Self-Evolution | ?| Cross-project parameter propagation |
+| ⚠ Acoustic/Ecology | 🟡 | Framework ready, core methods stub |
+| 🐬 Domain Focus | ?| Yangtze finless porpoise research |
+| 🧪 Test Suite | ?| 185/185 passing (35 fixes applied) |
 
 ---
 
@@ -199,10 +199,10 @@ porpoise-agent/
 ## 🪞 Self-Assessment
 
 ### Strengths
-- **Full cognitive stack**: BDI (belief modeling) + ReAct (reasoning loop) + Reflexion (self-critique) �?unique in domain-specific agents
+- **Full cognitive stack**: BDI (belief modeling) + ReAct (reasoning loop) + Reflexion (self-critique) ?unique in domain-specific agents
 - **MAS topology**: 7 agents with 6 topology types, enabling complex research workflows
 - **Triangle-powered**: Inherits knowledge from S-layer and verification from V-layer via eon-core
-- **Comprehensive testing**: 185/185 tests with 35 bug fixes �?high reliability baseline
+- **Comprehensive testing**: 185/185 tests with 35 bug fixes ?high reliability baseline
 - **Graceful degradation**: ChromaDB RAG falls back to keyword search when vector DB unavailable
 
 ### Current Limitations
@@ -221,19 +221,19 @@ porpoise-agent/
 
 ## 🔗 Ecosystem
 
-This project is the **Porpoise Domain Expert (P�?** in the SanShengWanWu ecosystem.
+This project is the **Porpoise Domain Expert (P?** in the SanShengWanWu ecosystem.
 
 ```
 Triangle Core + Derived Architecture (coordinated by eon-core):
 
-  S/V0  📦 fish-ecology-assistant    �?Knowledge Supply
-  V/V1  🔍 cognitive-search-engine   �?Search Verification
-  Coord ⚙️ eon-core                  �?Coordination Hub
+  S/V0  📦 fish-ecology-assistant    ?Knowledge Supply
+  V/V1  🔍 cognitive-search-engine   ?Search Verification
+  Coord ⚙ eon-core                  ?Coordination Hub
 
-  P�?   🐬 porpoise-agent           �?Porpoise Expert �?this project
-  P�?   🐟 coilia-agent             �?Coilia Expert
-  P�?   🐟 culter-agent             �?Culter Expert
-  C     🔥 conflict-arbiter         �?Conflict Arbitration
+  P?   🐬 porpoise-agent           ?Porpoise Expert ?this project
+  P?   🐟 coilia-agent             ?Coilia Expert
+  P?   🐟 culter-agent             ?Culter Expert
+  C     🔥 conflict-arbiter         ?Conflict Arbitration
 ```
 
 > 🔥 Together infinite power, apart top expert engines.
@@ -258,6 +258,6 @@ Triangle Core + Derived Architecture (coordinated by eon-core):
 >
 > We say: You cannot analyze today's ecological data with last month's code.
 
-This project is not a fixed toolset �?it is a **living system**. Every component has built-in expiration mechanisms, version tracking, and emergence awareness. As your research deepens, packages update, and new methods emerge, it evolves with you.
+This project is not a fixed toolset ?it is a **living system**. Every component has built-in expiration mechanisms, version tracking, and emergence awareness. As your research deepens, packages update, and new methods emerge, it evolves with you.
 
 *Last updated: 2026-06-17　|　Environment: Reasonix Code · DeepSeek Powered*

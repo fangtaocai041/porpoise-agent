@@ -1,10 +1,4 @@
-<div align="center">
-  <h1>🐬 江豚智能体</h1>
-  <p><em>江豚领域专家 — 五层认知架构 · BDI+ReAct+Reflexion · 七智能体MAS</em></p>
-</div>
-
-<p align="center">
-  ![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
+![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
   ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
   ![v0.2](https://img.shields.io/badge/v0.2-8A4FCE?style=flat-square)
   ![7-agent MAS](https://img.shields.io/badge/7-agent%20MAS-007EC6?style=flat-square)
@@ -15,8 +9,11 @@
   ![MCTS](https://img.shields.io/badge/MCTS-F59E0B?style=flat-square)
 </p>
 
----
+[English](README.md) · [中文](README.zh.md)
 
+长江江豚领域专用AI智能体。
+
+---
 ## 📖 目录
 
 - [哲学](#-哲学)

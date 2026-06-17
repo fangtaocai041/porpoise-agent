@@ -1,10 +1,4 @@
-<div align="center">
-  <h1>🐬 Porpoise Agent</h1>
-  <p><em>Porpoise Domain Expert — 5-layer cognitive architecture · BDI+ReAct+Reflexion · 7-agent MAS</em></p>
-</div>
-
-<p align="center">
-  ![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
+![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
   ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
   ![v0.2](https://img.shields.io/badge/v0.2-8A4FCE?style=flat-square)
   ![7-agent MAS](https://img.shields.io/badge/7-agent%20MAS-007EC6?style=flat-square)
@@ -15,8 +9,11 @@
   ![MCTS](https://img.shields.io/badge/MCTS-F59E0B?style=flat-square)
 </p>
 
----
+[English](README.md) · [中文](README.zh.md)
 
+Domain-specific AI agent for Yangtze finless porpoise research.
+
+---
 ## 📖 Table of Contents
 
 - [Philosophy](#-philosophy)

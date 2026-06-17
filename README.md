@@ -1,4 +1,4 @@
-![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
+﻿![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
   ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
   ![v2.2.0](https://img.shields.io/badge/v2.2.0-8A4FCE?style=flat-square)
   ![17 MCP](https://img.shields.io/badge/17%20MCP-007EC6?style=flat-square)
@@ -244,7 +244,7 @@ Triangle Core + Derived Architecture (coordinated by eon-core):
 
 | Version | Date | Theme | What Changed |
 |---------|------|-------|--------------|
-| v8.0 | 2026-06-20 | README Restoration | Restored from historical sessions, added DeepWiki badge, skills/MCP list, 5-phase pipeline details, README Changelog |
+| v8.0 | 2026-06-18 | README Restoration | Restored from historical sessions, added DeepWiki badge, skills/MCP list, 5-phase pipeline details, README Changelog |
 | v2.2.0 | 2026-06-17 | Production Release | 17 MCP integration, 18 skills, 26 KB files, 185/185 tests, cross-project evolution |
 | v2.1.0 | 2026-06-12 | Streaming & RAG | SSE streaming, StateGraph conditional routing, ChromaDB RAG |
 | v2.0.0 | 2026-06-07 | Architecture | 5-layer architecture, 7-agent MAS, BDI+ReAct+Reflexion loop |
@@ -260,4 +260,4 @@ Triangle Core + Derived Architecture (coordinated by eon-core):
 
 This project is not a fixed toolset ?it is a **living system**. Every component has built-in expiration mechanisms, version tracking, and emergence awareness. As your research deepens, packages update, and new methods emerge, it evolves with you.
 
-*Last updated: 2026-06-17　|　Environment: Reasonix Code · DeepSeek Powered*
+*Last updated: 2026-06-18　|　Environment: Reasonix Code · DeepSeek Powered*

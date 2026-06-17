@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   🇬🇧 <a href="README.md">English</a>
 </p>
 
@@ -81,7 +81,7 @@ python src/agent/orchestrator.py
 
 | 版本 | 日期 | 主题 |
 |------|------|------|
-| **v2.2.0** | 2026-06-20 | 五层架构 + 26 KB 文件 + 185 测试 |
+| **v2.2.0** | 2026-06-18 | 五层架构 + 26 KB 文件 + 185 测试 |
 | **v2.1.0** | 2026-06-12 | SSE 流式 + 跨项目验证 |
 | **v2.0.0** | 2026-06-07 | 三角核心集成 + 衍生架构 |
 | **v1.0.0** | 2026-06-05 | 初始发布 · 江豚声学检测 |
@@ -107,4 +107,4 @@ python src/agent/orchestrator.py
 
 这个项目不是一套固定的工具集——它是一个**活的系统**。
 
-*最后更新: 2026-06-17 | Reasonix Code · DeepSeek 驱动*
+*最后更新: 2026-06-18 | Reasonix Code · DeepSeek 驱动*

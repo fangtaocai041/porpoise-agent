@@ -1,6 +1,17 @@
 ﻿# 🐬 Porpoise Agent
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-v0.2-blueviolet?style=for-the-badge) ![Agents](https://img.shields.io/badge/Agents-7-MAS-success?style=for-the-badge) ![Arch](https://img.shields.io/badge/Arch-5-Layer-important?style=for-the-badge) ![BDI](https://img.shields.io/badge/BDI-ReAct-critical?style=for-the-badge) ![GoT](https://img.shields.io/badge/GoT-MCTS-informational?style=for-the-badge) ![SSE](https://img.shields.io/badge/SSE-Stream-ff69b4?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-orange?style=for-the-badge) ![StateGraph](https://img.shields.io/badge/StateGraph-topo-red?style=for-the-badge)
+<p align="center">
+  ![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
+  ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
+  ![v0.2](https://img.shields.io/badge/v0.2-8A4FCE?style=flat-square)
+  ![7-agent MAS](https://img.shields.io/badge/7-agent%20MAS-007EC6?style=flat-square)
+  ![5-layer](https://img.shields.io/badge/5-layer-FE7D37?style=flat-square)
+  ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-D73A4A?style=flat-square)
+  ![SSE stream](https://img.shields.io/badge/SSE%20stream-0EA5E9?style=flat-square)
+  ![ChromaDB](https://img.shields.io/badge/ChromaDB-EC4899?style=flat-square)
+  ![MCTS](https://img.shields.io/badge/MCTS-F59E0B?style=flat-square)
+</p>
+
 
 > 🎯 Porpoise Domain Expert Engine — 5-layer cognitive architecture with BDI+ReAct+Reflexion, 7-agent MAS, and frontier techniques.
 > A porpoise knows the river — an agent knows the domain.

@@ -1,6 +1,17 @@
 ﻿# 🐬 江豚智能体
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge) ![协议](https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-MIT-brightgreen?style=for-the-badge) ![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-v0.2-blueviolet?style=for-the-badge) ![智能体](https://img.shields.io/badge/%E6%99%BA%E8%83%BD%E4%BD%93-7%E4%BD%93-success?style=for-the-badge) ![架构](https://img.shields.io/badge/%E6%9E%B6%E6%9E%84-5%E5%B1%82-important?style=for-the-badge) ![BDI](https://img.shields.io/badge/BDI-ReAct-critical?style=for-the-badge) ![GoT](https://img.shields.io/badge/GoT-MCTS-informational?style=for-the-badge) ![SSE](https://img.shields.io/badge/SSE-%E6%B5%81%E5%BC%8F-ff69b4?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-RAG-orange?style=for-the-badge) ![拓扑](https://img.shields.io/badge/%E6%8B%93%E6%89%91-6%E5%9E%8B-red?style=for-the-badge)
+<p align="center">
+  ![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
+  ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
+  ![v0.2](https://img.shields.io/badge/v0.2-8A4FCE?style=flat-square)
+  ![7-agent MAS](https://img.shields.io/badge/7-agent%20MAS-007EC6?style=flat-square)
+  ![5-layer](https://img.shields.io/badge/5-layer-FE7D37?style=flat-square)
+  ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-D73A4A?style=flat-square)
+  ![SSE stream](https://img.shields.io/badge/SSE%20stream-0EA5E9?style=flat-square)
+  ![ChromaDB](https://img.shields.io/badge/ChromaDB-EC4899?style=flat-square)
+  ![MCTS](https://img.shields.io/badge/MCTS-F59E0B?style=flat-square)
+</p>
+
 
 > 🎯 江豚领域专家引擎 — 5层认知架构，BDI+ReAct+Reflexion，7智能体MAS，前沿技术。
 🎯 江豚领域专家引擎 — 五层认知架构，BDI+ReAct+Reflexion，七智能体。

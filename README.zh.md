@@ -8,6 +8,7 @@
   ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-EC4899?style=flat-square)
   ![5-layer](https://img.shields.io/badge/5层架构-F59E0B?style=flat-square)
   ![SSE stream](https://img.shields.io/badge/SSE%20流-6B7280?style=flat-square)
+  [![DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/fangtaocai041/porpoise-agent)
 </p>
 
 [English](README.md) · [中文](README.zh.md)
@@ -155,6 +156,18 @@ porpoise-agent/
 
 ---
 
+### 研究流水线（5 阶段）
+
+| 阶段 | 名称 | 说明 |
+|:---:|------|------|
+| 1 | 文献综述 | 多引擎搜索 + 引用图谱 |
+| 2 | 数据分析 | 信号处理 + 特征提取 |
+| 3 | 野外调查 | 路线生成 + 配置 |
+| 4 | 保护评估 | 指标计算 + 情景模拟 |
+| 5 | 输出生成 | 草稿生成 + 排版 |
+
+---
+
 ## 📁 项目结构
 
 ```
@@ -216,6 +229,18 @@ S-T-V-P₁-P₂ 架构（由 eon-core 协调）：
 ```
 
 > 🔥 和则无穷力量，分则顶尖专家引擎。
+
+---
+
+## 📋 README 更新日志
+
+| 版本 | 日期 | 主题 | 更新内容 |
+|------|------|------|----------|
+| v8.0 | 2026-06-20 | README 恢复 | 从历史会话恢复，新增 DeepWiki 徽章、技能/MCP 列表、5 阶段流水线详情、README 更新日志 |
+| v2.2.0 | 2026-06-17 | 生产发布 | 17 MCP 集成，18 技能，26 KB 文件，185/185 测试，跨项目进化 |
+| v2.1.0 | 2026-06-12 | 流式与 RAG | SSE 流式输出，StateGraph 条件路由，ChromaDB RAG |
+| v2.0.0 | 2026-06-07 | 架构搭建 | 5层架构，7智能体 MAS，BDI+ReAct+Reflexion 循环 |
+| v1.0.0 | 2026-06-01 | 奠基 | 初始江豚智能体框架 |
 
 ---
 

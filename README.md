@@ -8,6 +8,7 @@
   ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-EC4899?style=flat-square)
   ![5-layer](https://img.shields.io/badge/5-layer-F59E0B?style=flat-square)
   ![SSE stream](https://img.shields.io/badge/SSE%20stream-6B7280?style=flat-square)
+  [![DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/fangtaocai041/porpoise-agent)
 </p>
 
 [English](README.md) · [中文](README.zh.md)
@@ -162,6 +163,18 @@ porpoise-agent/
 
 ---
 
+### Research Pipeline (5 Phases)
+
+| Phase | Name | Description |
+|:-----:|------|-------------|
+| 1 | Literature Review | Multi-engine search + citation graph |
+| 2 | Data Analysis | Signal processing + feature extraction |
+| 3 | Field Survey | Route generation + configuration |
+| 4 | Conservation Assessment | Indicator calculation + scenario simulation |
+| 5 | Output Generation | Draft generation + typesetting |
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -223,6 +236,18 @@ S-T-V-P₁-P₂ Architecture (coordinated by eon-core):
 ```
 
 > 🔥 Together infinite power, apart top expert engines.
+
+---
+
+## 📋 README Changelog
+
+| Version | Date | Theme | What Changed |
+|---------|------|-------|--------------|
+| v8.0 | 2026-06-20 | README Restoration | Restored from historical sessions, added DeepWiki badge, skills/MCP list, 5-phase pipeline details, README Changelog |
+| v2.2.0 | 2026-06-17 | Production Release | 17 MCP integration, 18 skills, 26 KB files, 185/185 tests, cross-project evolution |
+| v2.1.0 | 2026-06-12 | Streaming & RAG | SSE streaming, StateGraph conditional routing, ChromaDB RAG |
+| v2.0.0 | 2026-06-07 | Architecture | 5-layer architecture, 7-agent MAS, BDI+ReAct+Reflexion loop |
+| v1.0.0 | 2026-06-01 | Foundation | Initial porpoise agent framework |
 
 ---
 

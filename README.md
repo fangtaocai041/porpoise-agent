@@ -53,7 +53,7 @@ This project is a **Derived Domain Expert (P?** in the SanShengWanWu Triangle Co
 | Scenario | Traditional | Dynamic Worldview |
 |:---------|:-----------|:-------------------|
 | Citations | Studies prove | Smith (2022) found X; Jones (2024) added Y |
-| Outliers | Dismiss as noise | Three or more sources ?emergence signal |
+| Outliers | Dismiss as noise | Three or more sources → emergence signal |
 | Knowledge Decay | Handbook frozen | Review records include next review date |
 | Method | Fixed pipeline | Dynamic selection, dynamic confidence |
 
@@ -115,7 +115,7 @@ porpoise-agent/
   src/
   ├── interaction/     L1 ?NLU intent parser + Markdown renderer
   ?  └── sse_emitter.py   SSE streaming output
-  ├── cognitive/       L2 ?BDI + ReAct + Reflexion + Decomposer (CoT/ToT/GoT)
+  ├── cognitive/       L2  — BDI + ReAct + Reflexion + Decomposer (CoT/ToT/GoT)
   ?  ├── bdi.py            Formal BDI with MDP correspondence
   ?  ├── react_loop.py     Think→Act→Observe→Reflect engine
   ?  ├── reflexion.py      Credit assignment + self-critique

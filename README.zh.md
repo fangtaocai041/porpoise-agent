@@ -11,7 +11,7 @@
 
 [English](README.md) · [中文](README.zh.md)
 
-长江江豚领域专用AI智能体。
+🌊 万物皆流。
 
 ---
 ## 📖 目录

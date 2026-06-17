@@ -11,7 +11,7 @@
 
 [English](README.md) · [中文](README.zh.md)
 
-Domain-specific AI agent for Yangtze finless porpoise research.
+🌊 Everything flows.
 
 ---
 ## 📖 Table of Contents

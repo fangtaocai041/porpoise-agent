@@ -1,4 +1,7 @@
-﻿# 🐬 Porpoise Agent
+<div align="center">
+  <h1>🐬 Porpoise Agent</h1>
+  <p><em>Porpoise Domain Expert — 5-layer cognitive architecture · BDI+ReAct+Reflexion · 7-agent MAS</em></p>
+</div>
 
 <p align="center">
   ![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
@@ -11,12 +14,6 @@
   ![ChromaDB](https://img.shields.io/badge/ChromaDB-EC4899?style=flat-square)
   ![MCTS](https://img.shields.io/badge/MCTS-F59E0B?style=flat-square)
 </p>
-
-
-> 🎯 Porpoise Domain Expert Engine — 5-layer cognitive architecture with BDI+ReAct+Reflexion, 7-agent MAS, and frontier techniques.
-> A porpoise knows the river — an agent knows the domain.
-
-[English](README.md) · [中文](README.zh.md) · [CHANGELOG](CHANGELOG.md)
 
 ---
 

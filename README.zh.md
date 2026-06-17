@@ -1,4 +1,7 @@
-﻿# 🐬 江豚智能体
+<div align="center">
+  <h1>🐬 江豚智能体</h1>
+  <p><em>江豚领域专家 — 五层认知架构 · BDI+ReAct+Reflexion · 七智能体MAS</em></p>
+</div>
 
 <p align="center">
   ![Python 3.11+](https://img.shields.io/badge/Python%203.11%2B-3776AB?style=flat-square)
@@ -11,13 +14,6 @@
   ![ChromaDB](https://img.shields.io/badge/ChromaDB-EC4899?style=flat-square)
   ![MCTS](https://img.shields.io/badge/MCTS-F59E0B?style=flat-square)
 </p>
-
-
-> 🎯 江豚领域专家引擎 — 5层认知架构，BDI+ReAct+Reflexion，7智能体MAS，前沿技术。
-🎯 江豚领域专家引擎 — 五层认知架构，BDI+ReAct+Reflexion，七智能体。
-> 江豚知江河，智能体知领域。
-
-[English](README.md) · [中文](README.zh.md) · [更新日志](CHANGELOG.md)
 
 ---
 

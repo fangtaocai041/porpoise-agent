@@ -11,5 +11,11 @@ Porpoise Agent v2.0 — 江豚研究智能体
 服务: 无锡渔业学院/淡水渔业研究中心 刘凯研究员课题组
 """
 
+import sys as _sys
+from pathlib import Path as _Path
+_PROJECT_ROOT = str(_Path(__file__).resolve().parent.parent)
+if _PROJECT_ROOT not in _sys.path:
+    _sys.path.insert(0, _PROJECT_ROOT)
+
 __version__ = "0.2.0"
 __architecture__ = "five_layer_cybernetic"

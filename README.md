@@ -17,7 +17,7 @@
 ![MIT](https://img.shields.io/badge/MIT-34D058?style=flat-square)
 ![v2.2.0](https://img.shields.io/badge/v2.2.0-8A4FCE?style=flat-square)
 ![17 MCP](https://img.shields.io/badge/17%20MCP-007EC6?style=flat-square)
-![18 skills](https://img.shields.io/badge/18%20skills-FE7D37?style=flat-square)
+![2 skills](https://img.shields.io/badge/2%20skills-FE7D37?style=flat-square)
 ![26 KB files](https://img.shields.io/badge/26%20KB%20files-D73A4A?style=flat-square)
 ![185 tests](https://img.shields.io/badge/185%2F185%20tests-0EA5E9?style=flat-square)
 ![BDI+ReAct](https://img.shields.io/badge/BDI%2BReAct-EC4899?style=flat-square)
@@ -92,7 +92,7 @@ This project is a **Derived Domain Expert (P₁)** in the SanShengWanWu Triangle
 - **5-layer cybernetic architecture** (Interaction → Cognitive → Memory → Mapping → Execution)
 - **7-agent MAS topology** (Literature, Acoustic, Ecology, Conservation, Critic, +2 support)
 - **17 MCP tools** across search, compute, data, and knowledge categories
-- **18 skills** for domain-specific analysis workflows
+- **2 skills** for domain-specific analysis workflows (detect-clicks, search-literature)
 - **185/185 tests passing** with 35 bug fixes applied
 - **26 KB files** of curated porpoise research knowledge
 
